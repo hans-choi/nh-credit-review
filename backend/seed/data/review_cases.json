@@ -1,0 +1,3113 @@
+{
+  "case-54ebfc2411": {
+    "id": "case-54ebfc2411",
+    "title": "(주)녹색테크 · 운전자금 5억 (BEST)",
+    "doc_ids": [
+      "aca95113d6",
+      "2640efe906",
+      "829fd782e6",
+      "883901f673",
+      "8ecb2aff8c"
+    ],
+    "loan_type_hint": null,
+    "status": "done",
+    "created_at": "2026-04-22T02:08:14.486526",
+    "steps": [
+      {
+        "id": "1_intake",
+        "title": "접수 · 데이터 추출",
+        "status": "done",
+        "started_at": "2026-04-22T02:08:14.523307",
+        "output": {
+          "docs": [
+            {
+              "doc_id": "aca95113d6",
+              "filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "doc_type": "business_registration",
+              "extracted_field_count": 12,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "2640efe906",
+              "filename": "02_재무제표_(주)녹색테크.pdf",
+              "doc_type": "financial_statement",
+              "extracted_field_count": 14,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "829fd782e6",
+              "filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "doc_type": "credit_agreement",
+              "extracted_field_count": 17,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "883901f673",
+              "filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "doc_type": "board_resolution",
+              "extracted_field_count": 22,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "8ecb2aff8c",
+              "filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "doc_type": "local_tax_certificate",
+              "extracted_field_count": 12,
+              "has_extraction": true
+            }
+          ],
+          "field_index": {
+            "등록번호": {
+              "value": "214-86-52719",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "법인구분": {
+              "value": "법인",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "상호": {
+              "value": "(주)녹색테크",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "대표자": {
+              "value": "김선우",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "법인등록번호": {
+              "value": "110111-8812453",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "개업연월일": {
+              "value": "2015년 03월 12일",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업장_소재지": {
+              "value": "서울특별시 강남구 테헤란로 427 (삼성동)",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "본점_소재지": {
+              "value": "서울특별시 강남구 테헤란로 427 (삼성동)",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업의_종류_업태": {
+              "value": "제조업",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업의_종류_종목": {
+              "value": "전자부품 제조",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "발급일자": {
+              "value": "2025년 03월 11일",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "발급기관": {
+              "value": "강남세무서장",
+              "source_doc_id": "aca95113d6",
+              "source_doc_filename": "01_사업자등록증_(주)녹색테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "회사명": {
+              "value": "(주)녹색테크",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "결산일_당기": {
+              "value": "2024-12-31",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "회계기준": {
+              "value": "일반적으로 인정되는 회계처리기준",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "감사의견": {
+              "value": "적정",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "감사인": {
+              "value": "(주)한빛회계법인",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "단위": {
+              "value": "원",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "재무상태표_테이블": {
+              "value": "[{\"항목\": \"유동자산\", \"당기\": \"2,840,000,000\", \"전기\": \"2,450,000,000\", \"전전기\": \"\"}, {\"항목\": \"비유동자산\", \"당기\": \"2,280,000,000\", \"전기\": \"2,160,000,000\", \"전전기\": \"\"}, {\"항목\": \"자 산 총 계\", \"당기\": \"5,120,000,000\", \"전기\": \"4,61",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "손익계산서_테이블": {
+              "value": "[{\"항목\": \"매 출 액\", \"당기\": \"8,250,000,000\", \"전기\": \"7,380,000,000\", \"전전기\": \"\"}, {\"항목\": \"매 출 원 가\", \"당기\": \"5,480,000,000\", \"전기\": \"4,910,000,000\", \"전전기\": \"\"}, {\"항목\": \"매 출 총 이 익\", \"당기\": \"2,770,000,000\", \"전기\": ",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자산총계": {
+              "value": "5,120,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "부채총계": {
+              "value": "1,540,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자본총계": {
+              "value": "3,580,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "매출액": {
+              "value": "8,250,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "영업이익": {
+              "value": "820,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "당기순이익": {
+              "value": "610,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "여신과목": {
+              "value": "일반자금대출",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신한도금액": {
+              "value": "금 오억원정 (₩ 500,000,000)",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_연도": {
+              "value": "2025",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_월": {
+              "value": "5",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_일": {
+              "value": "1",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_연도": {
+              "value": "2026",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_월": {
+              "value": "04",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_일": {
+              "value": "30",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_년수": {
+              "value": "1",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_체크": {
+              "value": true,
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_신규_체크": {
+              "value": true,
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_이율": {
+              "value": "1.35%",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_기타_체크": {
+              "value": true,
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_기타_기재": {
+              "value": "COFIX 기준금리 MOR",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "상환방법_일시_체크": {
+              "value": true,
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "상환방법_분할_체크": {
+              "value": true,
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "접수번호": {
+              "value": "2025-0501-214865",
+              "source_doc_id": "829fd782e6",
+              "source_doc_filename": "03_여신거래약정서_(주)녹색테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "결의일자": {
+              "value": "2025년 4월 15일",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "일시": {
+              "value": "2025년 4월 15일 오전 10시",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "장소": {
+              "value": "본사 회의실",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "재적이사수": {
+              "value": "5",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "출석이사수": {
+              "value": "5",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "채무자": {
+              "value": "(주)녹색테크",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "채무자_사업자등록번호": {
+              "value": "214-86-52719",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "연대보증자": {
+              "value": "대표이사 개인",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "은행": {
+              "value": "농협은행 ○○지점",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출종류": {
+              "value": "일반자금대출",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출금액": {
+              "value": "금 오억원정 (₩ 500,000,000)",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출기간": {
+              "value": "2025.05.01 ~ 2026.04.30 (1년)",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "자금용도": {
+              "value": "운전자금",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "담보종류": {
+              "value": "대표이사 개인 연대보증 + 무담보",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "근저당설정금액": {
+              "value": "해당없음",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "안건": {
+              "value": "(주)녹색테크의 농협은행 ○○지점으로부터의 일반자금대출 신규 여신 및 이에 따른 담보제공의 건",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "결의내용": {
+              "value": "원안대로 만장일치 가결",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "기타사항": {
+              "value": "본 안건에 명시되지 않은 사항은 대표이사가 차입은행과 협의하여 결정한다.",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대표이사_이름": {
+              "value": "김선우",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "사내이사1_이름": {
+              "value": "홍 길 동",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "사내이사2_이름": {
+              "value": "이 영 희",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "증명서_종류": {
+              "value": "지방세 납세증명서",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "납세자_성명_상호": {
+              "value": "(주)녹색테크",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "납세자_주민_법인_등록번호": {
+              "value": "110111-8812453",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "납세자_주소": {
+              "value": "서울특별시 강남구 테헤란로 427 (삼성동)",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "증명_세목": {
+              "value": "지방세 전 세목 (지방소득세·주민세·재산세 등)",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "과세기간": {
+              "value": "전 기간",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "체납_유무": {
+              "value": "체납없음",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "체납액": {
+              "value": "0 원",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "사용_용도": {
+              "value": "여신 신청용",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "유효기간": {
+              "value": "발급일로부터 30일",
+              "source_doc_id": "8ecb2aff8c",
+              "source_doc_filename": "05_지방세납세증명_(주)녹색테크.pdf",
+              "source_doc_type": "local_tax_certificate"
+            }
+          },
+          "headline": {
+            "회사명": {
+              "value": "(주)녹색테크",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출금액": {
+              "value": "금 오억원정 (₩ 500,000,000)",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "담보_채권최고액": {
+              "value": "해당없음",
+              "source_doc_id": "883901f673",
+              "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "매출액": {
+              "value": "8,250,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "영업이익": {
+              "value": "820,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자산총계": {
+              "value": "5,120,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "부채총계": {
+              "value": "1,540,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자본총계": {
+              "value": "3,580,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "당기순이익": {
+              "value": "610,000,000",
+              "source_doc_id": "2640efe906",
+              "source_doc_filename": "02_재무제표_(주)녹색테크.pdf",
+              "source_doc_type": "financial_statement"
+            }
+          },
+          "total_docs": 5,
+          "total_fields_across_docs": 77
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:08:14.523434"
+      },
+      {
+        "id": "2_classify",
+        "title": "서류 분류 · 완비도",
+        "status": "done",
+        "started_at": "2026-04-22T02:08:14.523436",
+        "output": {
+          "detected_loan_type": "기업 운전자금",
+          "loan_type_label": "기업 운전자금 대출",
+          "required": [
+            "credit_agreement",
+            "financial_statement",
+            "business_registration",
+            "board_resolution",
+            "local_tax_certificate"
+          ],
+          "optional": [
+            "real_estate_title",
+            "mortgage",
+            "bank_account_copy"
+          ],
+          "present": [
+            "credit_agreement",
+            "financial_statement",
+            "business_registration",
+            "board_resolution",
+            "local_tax_certificate"
+          ],
+          "missing": [],
+          "optional_present": [],
+          "coverage": 1.0,
+          "coverage_pct": 100,
+          "completeness_verdict": "완비"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:08:14.523451"
+      },
+      {
+        "id": "3_risk",
+        "title": "리스크 평가",
+        "status": "done",
+        "started_at": "2026-04-22T02:08:14.523453",
+        "output": {
+          "ratios": {
+            "부채비율": 43.0,
+            "자기자본비율": 69.9,
+            "영업이익률": 9.94,
+            "순이익률": 7.39
+          },
+          "signals": [],
+          "cb_score_demo": 72,
+          "cb_grade_demo": "BBB",
+          "industry_risk_demo": "고위험",
+          "summary": {
+            "매출액": "82.50 억원",
+            "영업이익": "8.20 억원",
+            "자산총계": "51.20 억원",
+            "부채총계": "15.40 억원",
+            "자본총계": "35.80 억원",
+            "당기순이익": "6.10 억원"
+          }
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:08:14.523802"
+      },
+      {
+        "id": "4_regulations",
+        "title": "여신 규정 체크 (RAG)",
+        "status": "done",
+        "started_at": "2026-04-22T02:08:14.523804",
+        "output": {
+          "regulation_count": 1,
+          "queries": [
+            {
+              "q": "여신 한도 기준 및 승인 절차",
+              "context": "여신 금액"
+            },
+            {
+              "q": "담보 LTV 및 채권최고액 설정 기준",
+              "context": "담보"
+            },
+            {
+              "q": "기업 여신 재무 비율 기준",
+              "context": "재무"
+            },
+            {
+              "q": "이사회 결의 필요 여부 기준",
+              "context": "절차"
+            },
+            {
+              "q": "신용등급 및 리스크 관리 규정",
+              "context": "리스크"
+            }
+          ],
+          "rule_judgments": [
+            {
+              "query": "여신 한도 기준 및 승인 절차",
+              "context": "여신 금액",
+              "top_rule": {
+                "text": "제2장 여신 한도\n\n###",
+                "score": 0.477,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c4",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제4조 기업 여신 개별 한도\n기업에 대한 개별 여신한도는 해당 기업의 최근 결산 기준 매출액의 100분의 30을 초과할 수 없다. 다만, 우량 등급(AA 이상)에 한하여 100분의 50까지 가능하다.\n\n###",
+                  "score": 0.429,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제11조 결재선\n여신 금액별 결재선은 다음과 같다.\n- 1억 원 미만: 지점장 전결\n- 1억 원 이상 5억 원 미만: 본부장 결재\n- 5억 원 이상 10억 원 미만: 여신담당 부행장 결재\n- 10억 원 이상 50억 원 미만: 여신심사위원회 심의 후 부행장 승인\n- 50",
+                  "score": 0.422,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "제공된 여신 규정 조항에 여신 한도 관련 구체적 기준(예: 부채비율, 자기자본비율, 매출액 대비 대출금액 비율 등)이 명시되지 않아 규정 준수 여부를 판단할 수 없음."
+              }
+            },
+            {
+              "query": "담보 LTV 및 채권최고액 설정 기준",
+              "context": "담보",
+              "top_rule": {
+                "text": "제8조 근저당 채권최고액\n근저당권 설정 시 채권최고액은 여신원금의 100분의 120으로 설정함을 원칙으로 한다. 특약에 의한 별도 설정이 필요한 경우 여신심사위원회 의결을 거친다.\n\n###",
+                "score": 0.5,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c11",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제7조 LTV 기준\n부동산 담보의 LTV(담보인정비율)는 감정평가액의 100분의 70 이내로 한다. 주거용 부동산 중 규제 지역은 100분의 60, 비규제 지역은 100분의 70으로 한다.\n\n###",
+                  "score": 0.433,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제10조 후순위 담보\n후순위 근저당은 선순위 채권최고액 합계가 감정가액의 60%를 초과하지 않는 경우에 한하여 제한적으로 허용한다.\n\n##",
+                  "score": 0.427,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "심사 건 데이터에 근저당 채권최고액 설정 관련 정보가 없어 규정 조항과 직접 비교 불가"
+              }
+            },
+            {
+              "query": "기업 여신 재무 비율 기준",
+              "context": "재무",
+              "top_rule": {
+                "text": "제5조 부채비율 기준\n여신 신청 기업의 부채비율은 400%를 초과해서는 안 된다. 부채비율 300% 초과 시 추가 담보 또는 신용보강 수단을 요구한다.\n\n###",
+                "score": 0.516,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c7",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제4조 기업 여신 개별 한도\n기업에 대한 개별 여신한도는 해당 기업의 최근 결산 기준 매출액의 100분의 30을 초과할 수 없다. 다만, 우량 등급(AA 이상)에 한하여 100분의 50까지 가능하다.\n\n###",
+                  "score": 0.469,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제6조 자기자본비율 기준\n자기자본비율이 20% 미만인 기업에 대한 신규 여신은 원칙적으로 제한한다. 자본잠식 상태의 기업은 구조조정 목적 외의 여신을 실행하지 아니한다.\n\n##",
+                  "score": 0.467,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "통과",
+                "reason": "부채비율이 43.0%로 규정에서 정한 400% 미만을 충족하며, 추가 담보 또는 신용보강 수단 요구 기준인 300% 초과에도 해당하지 않음."
+              }
+            },
+            {
+              "query": "이사회 결의 필요 여부 기준",
+              "context": "절차",
+              "top_rule": {
+                "text": "제12조 이사회 결의 요건\n다음 각 호에 해당하는 여신은 이사회 결의를 필수로 한다.\n1. 여신 금액 50억 원 이상\n2. 동일차주 여신 합계가 자기자본의 100분의 10을 초과하는 경우\n3. 담보 후순위가 설정되는 기업 여신\n4. 기존 여신의 상환 유예 또는 조건 변경 중 중대한 사항\n\n###",
+                "score": 0.43,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c16",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제11조 결재선\n여신 금액별 결재선은 다음과 같다.\n- 1억 원 미만: 지점장 전결\n- 1억 원 이상 5억 원 미만: 본부장 결재\n- 5억 원 이상 10억 원 미만: 여신담당 부행장 결재\n- 10억 원 이상 50억 원 미만: 여신심사위원회 심의 후 부행장 승인\n- 50",
+                  "score": 0.321,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제14조 신용등급 기준\n외부 CB사(NICE, KCB 등)의 최근 신용등급 보고서를 기준으로 한다. BBB 미만 등급의 기업 여신은 신규 실행을 제한하며, 기존 여신은 여신심사위원회 심의 후 유지 여부를 결정한다.\n\n###",
+                  "score": 0.289,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "LLM 응답 파싱 실패: Extra data: line 3 column 1 (char 151)"
+              }
+            },
+            {
+              "query": "신용등급 및 리스크 관리 규정",
+              "context": "리스크",
+              "top_rule": {
+                "text": "제16조 업종 리스크 관리\n특정 업종에 대한 여신 집중도가 총 여신의 100분의 20을 초과하지 않도록 관리한다. 고위험 업종(레버리지 업종, 건설업 일부 등)에 대한 신규 여신은 업종 한도 관리 기준을 준수한다.\n\n##",
+                "score": 0.398,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c21",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제14조 신용등급 기준\n외부 CB사(NICE, KCB 등)의 최근 신용등급 보고서를 기준으로 한다. BBB 미만 등급의 기업 여신은 신규 실행을 제한하며, 기존 여신은 여신심사위원회 심의 후 유지 여부를 결정한다.\n\n###",
+                  "score": 0.38,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제21조 부실 징후 조기 경보\n차주의 매출액이 전년 동기 대비 100분의 30 이상 감소하거나, 신용등급이 2단계 이상 하향 조정되는 경우 조기 경보 대상으로 관리한다.\n\n###",
+                  "score": 0.341,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "심사 건 데이터에 업종 정보가 없어 규정 조항 제16조(업종 리스크 관리) 적용 여부를 판단할 수 없음."
+              }
+            }
+          ],
+          "pass_count": 1,
+          "warn_count": 0,
+          "fail_count": 0
+        },
+        "duration_ms": 8204,
+        "finished_at": "2026-04-22T02:08:22.728744"
+      },
+      {
+        "id": "5_report",
+        "title": "심사 의견서 생성",
+        "status": "done",
+        "started_at": "2026-04-22T02:08:22.728759",
+        "output": {
+          "report_markdown": "# 여신 심사 의견서  \n\n## 1. 채무자 및 여신 개요  \n채무자는 (주)녹색테크로, 기업 운전자금 대출 금 5억 원(₩ 500,000,000)을 신청했습니다. 여신 유형은 기업 운전자금 대출이며, 담보채권최고액은 해당 없음으로 확인됩니다.  \n\n## 2. 재무 현황 분석  \n2023년 기준 매출액은 82.50억 원, 영업이익 8.20억 원, 당기순이익 6.10억 원으로 안정적인 수익성을 보입니다. 자산총계 51.20억 원 대비 부채비율 43.0%, 자기자본비율 69.9%로 재무 건전성이 우수하며, 재무리스크신호는 없습니다.  \n\n## 3. 담보 및 보증 현황  \n본 여신 건은 무담보 대출로, 담보 및 보증 현황은 \"해당없음\"으로 확인됩니다.  \n\n## 4. 내부 규정 준수 여부  \n규정_통과 1, 규정_주의 0, 규정_위반 0으로 모든 내부 규정을 충족했습니다. 서류완비도는 100%(완비)이며, 누락서류는 없습니다.  \n\n## 5. 종합 리스크 평가  \nCB등급은 BBB(72점)로 보통 수준이지만, 업종리스크 \"고위험\"이 리스크 요인입니다. 다만 재무비율(부채비율 43.0%, 영업이익률 9.94%)과 서류 완비도로 상쇄 가능성이 있습니다.  \n\n## 6. 심사 의견  \n**\"조건부 승인\"**  \n- **근거**: CB등급(BBB)과 재무 건전성(부채비율 43.0%)은 양호하나, 업종리스크 \"고위험\"으로 인해 추가 조건(예: 담보 추가 또는 금리 상향) 부과가 필요합니다. 서류 및 규정 준수는 완벽하여 실행 가능성은 높습니다.",
+          "context": {
+            "채무자": "(주)녹색테크",
+            "여신_유형": "기업 운전자금 대출",
+            "대출금액": "금 오억원정 (₩ 500,000,000)",
+            "담보채권최고액": "해당없음",
+            "재무요약": {
+              "매출액": "82.50 억원",
+              "영업이익": "8.20 억원",
+              "자산총계": "51.20 억원",
+              "부채총계": "15.40 억원",
+              "자본총계": "35.80 억원",
+              "당기순이익": "6.10 억원"
+            },
+            "재무비율": {
+              "부채비율": 43.0,
+              "자기자본비율": 69.9,
+              "영업이익률": 9.94,
+              "순이익률": 7.39
+            },
+            "재무리스크신호": [],
+            "cb등급_demo": "BBB (72점)",
+            "업종리스크_demo": "고위험",
+            "서류완비도": "100% (완비)",
+            "누락서류": [],
+            "규정_통과": 1,
+            "규정_주의": 0,
+            "규정_위반": 0
+          }
+        },
+        "duration_ms": 3172,
+        "finished_at": "2026-04-22T02:08:25.900796"
+      },
+      {
+        "id": "6_decision",
+        "title": "최종 승인 판단",
+        "status": "done",
+        "started_at": "2026-04-22T02:08:25.900815",
+        "output": {
+          "decision": "승인",
+          "total_score": 93.0,
+          "sub_scores": {
+            "서류_완비도": 100,
+            "재무_건전성": 100,
+            "규정_준수": 100,
+            "신용등급": 72
+          },
+          "reasons": [],
+          "conditions": [],
+          "demo_note": "실제 운영 시 결재선·승인 권한 체크 필요"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:08:25.900850"
+      },
+      {
+        "id": "7_external",
+        "title": "외부 조회 (Demo)",
+        "status": "done",
+        "started_at": "2026-04-22T02:08:25.900853",
+        "output": {
+          "mocks": {
+            "금감원 전자공시 (DART)": {
+              "법인명": "(주)녹색테크",
+              "summary": "(주)녹색테크 · 분기보고서 및 최근 공시 이력 확인",
+              "최근_공시": "분기보고서 (2026.Q1)",
+              "감사의견": "조회 결과 참조",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_01_DART공시_(주)녹색테크.pdf",
+              "source_doc_id": "f5a3388576"
+            },
+            "NICE · KCB 신용조회": {
+              "summary": "기업 신용 등급 · 연체 이력 · 타행 여신 현황 조회",
+              "평가기관": "NICE 평가정보 (주)",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_02_NICE신용평가_(주)녹색테크.pdf",
+              "source_doc_id": "b3bc0f90d0"
+            },
+            "국세청 홈택스 납세증명": {
+              "summary": "국세 체납 여부 확인 (Mock)",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_03_국세청조회_(주)녹색테크.pdf",
+              "source_doc_id": "f648f9ad6b"
+            },
+            "대법원 등기정보광장": {
+              "summary": "법인등기 유효성 · 임원 현황 · 회생/파산 여부 조회",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_04_대법원등기_(주)녹색테크.pdf",
+              "source_doc_id": "9d43dc598a"
+            }
+          },
+          "external_docs": [
+            "DART",
+            "NICE",
+            "TAX",
+            "COURT"
+          ],
+          "demo_note": "실제 연동 시 DART API, 홈택스 API, 대법원 등기정보광장 API, CB사 API 계약 필요"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:08:25.901116"
+      }
+    ],
+    "evidence": [
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "회사명",
+        "value": "(주)녹색테크",
+        "source_doc_id": "883901f673",
+        "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "대출금액",
+        "value": "금 오억원정 (₩ 500,000,000)",
+        "source_doc_id": "883901f673",
+        "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "담보_채권최고액",
+        "value": "해당없음",
+        "source_doc_id": "883901f673",
+        "source_doc_filename": "04_이사회결의서_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "매출액",
+        "value": "8,250,000,000",
+        "source_doc_id": "2640efe906",
+        "source_doc_filename": "02_재무제표_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "영업이익",
+        "value": "820,000,000",
+        "source_doc_id": "2640efe906",
+        "source_doc_filename": "02_재무제표_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "자산총계",
+        "value": "5,120,000,000",
+        "source_doc_id": "2640efe906",
+        "source_doc_filename": "02_재무제표_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "부채총계",
+        "value": "1,540,000,000",
+        "source_doc_id": "2640efe906",
+        "source_doc_filename": "02_재무제표_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "자본총계",
+        "value": "3,580,000,000",
+        "source_doc_id": "2640efe906",
+        "source_doc_filename": "02_재무제표_(주)녹색테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "당기순이익",
+        "value": "610,000,000",
+        "source_doc_id": "2640efe906",
+        "source_doc_filename": "02_재무제표_(주)녹색테크.pdf"
+      },
+      {
+        "step": "2_classify",
+        "category": "서류 완비도",
+        "title": "기업 운전자금 대출 · 필수서류 5/5",
+        "value": "누락: 없음"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "부채비율",
+        "value": "43.0%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "자기자본비율",
+        "value": "69.9%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "영업이익률",
+        "value": "9.94%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "순이익률",
+        "value": "7.39%"
+      },
+      {
+        "step": "3_risk",
+        "category": "외부 신용조회 (Demo)",
+        "title": "NICE CB 등급",
+        "value": "BBB (72점)",
+        "demo": true
+      },
+      {
+        "step": "3_risk",
+        "category": "업종 리스크 (Demo)",
+        "title": "업종 등급",
+        "value": "고위험",
+        "demo": true
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "여신 한도 기준 및 승인 절차",
+        "value": "[미판정] 제공된 여신 규정 조항에 여신 한도 관련 구체적 기준(예: 부채비율, 자기자본비율, 매출액 대비 대출금액 비율 등)이 명시되지 않아 규정 준수 여부를 판단할 수 없음.",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제2장 여신 한도\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "담보 LTV 및 채권최고액 설정 기준",
+        "value": "[미판정] 심사 건 데이터에 근저당 채권최고액 설정 관련 정보가 없어 규정 조항과 직접 비교 불가",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제8조 근저당 채권최고액\n근저당권 설정 시 채권최고액은 여신원금의 100분의 120으로 설정함을 원칙으로 한다. 특약에 의한 별도 설정이 필요한 경우 여신심사위원회 의결을 거친다.\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "기업 여신 재무 비율 기준",
+        "value": "[통과] 부채비율이 43.0%로 규정에서 정한 400% 미만을 충족하며, 추가 담보 또는 신용보강 수단 요구 기준인 300% 초과에도 해당하지 않음.",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제5조 부채비율 기준\n여신 신청 기업의 부채비율은 400%를 초과해서는 안 된다. 부채비율 300% 초과 시 추가 담보 또는 신용보강 수단을 요구한다.\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "이사회 결의 필요 여부 기준",
+        "value": "[미판정] LLM 응답 파싱 실패: Extra data: line 3 column 1 (char 151)",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제12조 이사회 결의 요건\n다음 각 호에 해당하는 여신은 이사회 결의를 필수로 한다.\n1. 여신 금액 50억 원 이상\n2. 동일차주 여신 합계가 자기자본의 100분의 10을 초과하는 경우\n3. 담보 후순위가 설정되는 기업 여신\n4. 기존 여신의 상환 유예 또는 조건 변경 중 중대한 사항\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "신용등급 및 리스크 관리 규정",
+        "value": "[미판정] 심사 건 데이터에 업종 정보가 없어 규정 조항 제16조(업종 리스크 관리) 적용 여부를 판단할 수 없음.",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제16조 업종 리스크 관리\n특정 업종에 대한 여신 집중도가 총 여신의 100분의 20을 초과하지 않도록 관리한다. 고위험 업종(레버리지 업종, 건설업 일부 등)에 대한 신규 여신은 업종 한도 관리 기준을 준수한다.\n\n##"
+      },
+      {
+        "step": "5_report",
+        "category": "자동 생성 의견서",
+        "title": "여신 심사의견서",
+        "value": "755 chars, Solar-pro generated"
+      },
+      {
+        "step": "6_decision",
+        "category": "최종 판정",
+        "title": "승인",
+        "value": "종합 점수 93.0/100 · 주요 리스크 시그널 없음"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "금감원 전자공시 (DART)",
+        "value": "(주)녹색테크 · 분기보고서 및 최근 공시 이력 확인",
+        "demo": true,
+        "source_doc_id": "f5a3388576",
+        "source_doc_filename": "ext_01_DART공시_(주)녹색테크.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "NICE · KCB 신용조회",
+        "value": "기업 신용 등급 · 연체 이력 · 타행 여신 현황 조회",
+        "demo": true,
+        "source_doc_id": "b3bc0f90d0",
+        "source_doc_filename": "ext_02_NICE신용평가_(주)녹색테크.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "국세청 홈택스 납세증명",
+        "value": "국세 체납 여부 확인 (Mock)",
+        "demo": true,
+        "source_doc_id": "f648f9ad6b",
+        "source_doc_filename": "ext_03_국세청조회_(주)녹색테크.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "대법원 등기정보광장",
+        "value": "법인등기 유효성 · 임원 현황 · 회생/파산 여부 조회",
+        "demo": true,
+        "source_doc_id": "9d43dc598a",
+        "source_doc_filename": "ext_04_대법원등기_(주)녹색테크.pdf"
+      }
+    ],
+    "started_at": "2026-04-22T02:08:14.523300",
+    "finished_at": "2026-04-22T02:08:25.901119"
+  },
+  "case-3f78053551": {
+    "id": "case-3f78053551",
+    "title": "(주)퍼스트레버리지 · 운전자금 30억 (FAIL)",
+    "doc_ids": [
+      "8ceab1d704",
+      "cfd656bba6",
+      "79aabf1484",
+      "89e99d23f4",
+      "69f7f7aa2f"
+    ],
+    "loan_type_hint": null,
+    "status": "done",
+    "created_at": "2026-04-22T02:09:18.371216",
+    "steps": [
+      {
+        "id": "1_intake",
+        "title": "접수 · 데이터 추출",
+        "status": "done",
+        "started_at": "2026-04-22T02:09:18.412327",
+        "output": {
+          "docs": [
+            {
+              "doc_id": "8ceab1d704",
+              "filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "doc_type": "business_registration",
+              "extracted_field_count": 12,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "cfd656bba6",
+              "filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "doc_type": "financial_statement",
+              "extracted_field_count": 14,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "79aabf1484",
+              "filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "doc_type": "credit_agreement",
+              "extracted_field_count": 16,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "89e99d23f4",
+              "filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "doc_type": "board_resolution",
+              "extracted_field_count": 21,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "69f7f7aa2f",
+              "filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "doc_type": "local_tax_certificate",
+              "extracted_field_count": 13,
+              "has_extraction": true
+            }
+          ],
+          "field_index": {
+            "등록번호": {
+              "value": "108-81-33290",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "법인구분": {
+              "value": "법인",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "상호": {
+              "value": "(주)퍼스트레버리지",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "대표자": {
+              "value": "박민호",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "법인등록번호": {
+              "value": "110111-6721983",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "개업연월일": {
+              "value": "2019년 07월 08일",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업장_소재지": {
+              "value": "서울특별시 영등포구 여의대로 38 (여의도동)",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "본점_소재지": {
+              "value": "서울특별시 영등포구 여의대로 38 (여의도동)",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업의_종류_업태": {
+              "value": "건설업",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업의_종류_종목": {
+              "value": "토목건축공사업",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "발급일자": {
+              "value": "2025년 03월 11일",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "발급기관": {
+              "value": "강남세무서장",
+              "source_doc_id": "8ceab1d704",
+              "source_doc_filename": "01_사업자등록증_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "회사명": {
+              "value": "(주)퍼스트레버리지",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "결산일_당기": {
+              "value": "2024-12-31",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "회계기준": {
+              "value": "일반적으로 인정되는 회계처리기준",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "감사의견": {
+              "value": "한정",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "감사인": {
+              "value": "(주)선진회계법인",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "단위": {
+              "value": "원",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "재무상태표_테이블": {
+              "value": "[{\"항목\": \"유동자산\", \"당기\": \"890,000,000\", \"전기\": \"1,120,000,000\", \"전전기\": \"\"}, {\"항목\": \"비유동자산\", \"당기\": \"3,130,000,000\", \"전기\": \"3,230,000,000\", \"전전기\": \"\"}, {\"항목\": \"자 산 총 계\", \"당기\": \"4,020,000,000\", \"전기\": \"4,350,",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "손익계산서_테이블": {
+              "value": "[{\"항목\": \"매 출 액\", \"당기\": \"2,180,000,000\", \"전기\": \"3,110,000,000\", \"전전기\": \"\"}, {\"항목\": \"매 출 원 가\", \"당기\": \"2,050,000,000\", \"전기\": \"2,730,000,000\", \"전전기\": \"\"}, {\"항목\": \"매 출 총 이 익\", \"당기\": \"130,000,000\", \"전기\": \"3",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자산총계": {
+              "value": "4,020,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "부채총계": {
+              "value": "3,500,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자본총계": {
+              "value": "520,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "매출액": {
+              "value": "2,180,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "영업이익": {
+              "value": "-300,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "당기순이익": {
+              "value": "-450,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "여신과목": {
+              "value": "일반자금대출",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신한도금액": {
+              "value": "금 삼십억원정 (₩ 3,000,000,000)",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_연도": {
+              "value": "2025",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_월": {
+              "value": "05",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_일": {
+              "value": "01",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_연도": {
+              "value": "2025",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_월": {
+              "value": "10",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_일": {
+              "value": "31",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_체크": {
+              "value": true,
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_신규_체크": {
+              "value": true,
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_이율": {
+              "value": "1.35%",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_기타_체크": {
+              "value": true,
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_기타_기재": {
+              "value": "COFIX 기준금리 MOR",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "상환방법_일시_체크": {
+              "value": true,
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "상환방법_분할_체크": {
+              "value": true,
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "접수번호": {
+              "value": "2025-0501-108813",
+              "source_doc_id": "79aabf1484",
+              "source_doc_filename": "03_여신거래약정서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "결의일자": {
+              "value": "2025년 4월 20일",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "일시": {
+              "value": "2025년 4월 20일 오후 2시",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "장소": {
+              "value": "본사 회의실",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "재적이사수": {
+              "value": "4",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "출석이사수": {
+              "value": "3",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "채무자": {
+              "value": "(주)퍼스트레버리지",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "채무자_사업자등록번호": {
+              "value": "108-81-33290",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "은행": {
+              "value": "농협은행 ○○지점",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출종류": {
+              "value": "일반자금대출",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출금액": {
+              "value": "금 삼십억원정 (₩ 3,000,000,000)",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출기간": {
+              "value": "2025.05.01 ~ 2025.10.31 (6개월)",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "자금용도": {
+              "value": "운전자금 · 기한연장",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "담보종류": {
+              "value": "후순위 근저당 (선순위 채권최고액 합계 55억원)",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "근저당설정금액": {
+              "value": "금 삼십육억원정 (₩ 3,600,000,000)",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "안건": {
+              "value": "(주)퍼스트레버리지의 농협은행 ○○지점으로부터의 일반자금대출 신규 여신 및 이에 따른 담보제공의 건",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "결의내용": {
+              "value": "찬성 2, 반대 1 - 조건부 가결 (선순위 채권자 동의 조건)",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "기타사항": {
+              "value": "본 안건에 명시되지 않은 사항은 대표이사가 차입은행과 협의하여 결정한다.",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대표이사_이름": {
+              "value": "박민호",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "사내이사1_이름": {
+              "value": "홍 길 동",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "사내이사2_이름": {
+              "value": "이 영 희",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "증명서_종류": {
+              "value": "지방세 납세증명서",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "납세자_성명_상호": {
+              "value": "(주)퍼스트레버리지",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "납세자_주민_법인_등록번호": {
+              "value": "110111-6721983",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "납세자_주소": {
+              "value": "서울특별시 영등포구 여의대로 38 (여의도동)",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "증명_세목": {
+              "value": "지방세 전 세목 (지방소득세·주민세·재산세 등)",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "과세기간": {
+              "value": "전 기간",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "체납_유무": {
+              "value": "체납있음",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "체납액": {
+              "value": "42,180,000",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "체납_세목_목록": {
+              "value": "[{\"세목\": \"지방소득세\", \"과세연월\": \"2023년 11월\", \"체납액\": \"18,320,000\"}, {\"세목\": \"주민세\", \"과세연월\": \"2024년 03월\", \"체납액\": \"8,560,000\"}, {\"세목\": \"재산세\", \"과세연월\": \"2024년 09월\", \"체납액\": \"15,300,000\"}]",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "사용_용도": {
+              "value": "여신 신청용",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            },
+            "유효기간": {
+              "value": "발급일로부터 30일",
+              "source_doc_id": "69f7f7aa2f",
+              "source_doc_filename": "05_지방세납세증명_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "local_tax_certificate"
+            }
+          },
+          "headline": {
+            "회사명": {
+              "value": "(주)퍼스트레버리지",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "대출금액": {
+              "value": "금 삼십억원정 (₩ 3,000,000,000)",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "담보_채권최고액": {
+              "value": "금 삼십육억원정 (₩ 3,600,000,000)",
+              "source_doc_id": "89e99d23f4",
+              "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "board_resolution"
+            },
+            "매출액": {
+              "value": "2,180,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "영업이익": {
+              "value": "-300,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자산총계": {
+              "value": "4,020,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "부채총계": {
+              "value": "3,500,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자본총계": {
+              "value": "520,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "당기순이익": {
+              "value": "-450,000,000",
+              "source_doc_id": "cfd656bba6",
+              "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf",
+              "source_doc_type": "financial_statement"
+            }
+          },
+          "total_docs": 5,
+          "total_fields_across_docs": 76
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:09:18.412447"
+      },
+      {
+        "id": "2_classify",
+        "title": "서류 분류 · 완비도",
+        "status": "done",
+        "started_at": "2026-04-22T02:09:18.412449",
+        "output": {
+          "detected_loan_type": "기업 운전자금",
+          "loan_type_label": "기업 운전자금 대출",
+          "required": [
+            "credit_agreement",
+            "financial_statement",
+            "business_registration",
+            "board_resolution",
+            "local_tax_certificate"
+          ],
+          "optional": [
+            "real_estate_title",
+            "mortgage",
+            "bank_account_copy"
+          ],
+          "present": [
+            "credit_agreement",
+            "financial_statement",
+            "business_registration",
+            "board_resolution",
+            "local_tax_certificate"
+          ],
+          "missing": [],
+          "optional_present": [],
+          "coverage": 1.0,
+          "coverage_pct": 100,
+          "completeness_verdict": "완비"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:09:18.412463"
+      },
+      {
+        "id": "3_risk",
+        "title": "리스크 평가",
+        "status": "done",
+        "started_at": "2026-04-22T02:09:18.412464",
+        "output": {
+          "ratios": {
+            "부채비율": 673.1,
+            "자기자본비율": 12.9,
+            "영업이익률": -13.76,
+            "순이익률": -20.64
+          },
+          "signals": [
+            {
+              "level": "high",
+              "msg": "부채비율 673.1% — 400% 초과"
+            },
+            {
+              "level": "high",
+              "msg": "영업적자 -13.76%"
+            }
+          ],
+          "cb_score_demo": 77,
+          "cb_grade_demo": "A",
+          "industry_risk_demo": "중위험",
+          "summary": {
+            "매출액": "21.80 억원",
+            "영업이익": "-3.00 억원",
+            "자산총계": "40.20 억원",
+            "부채총계": "35.00 억원",
+            "자본총계": "5.20 억원",
+            "당기순이익": "-4.50 억원"
+          }
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:09:18.412572"
+      },
+      {
+        "id": "4_regulations",
+        "title": "여신 규정 체크 (RAG)",
+        "status": "done",
+        "started_at": "2026-04-22T02:09:18.412574",
+        "output": {
+          "regulation_count": 1,
+          "queries": [
+            {
+              "q": "여신 한도 기준 및 승인 절차",
+              "context": "여신 금액"
+            },
+            {
+              "q": "담보 LTV 및 채권최고액 설정 기준",
+              "context": "담보"
+            },
+            {
+              "q": "기업 여신 재무 비율 기준",
+              "context": "재무"
+            },
+            {
+              "q": "이사회 결의 필요 여부 기준",
+              "context": "절차"
+            },
+            {
+              "q": "신용등급 및 리스크 관리 규정",
+              "context": "리스크"
+            }
+          ],
+          "rule_judgments": [
+            {
+              "query": "여신 한도 기준 및 승인 절차",
+              "context": "여신 금액",
+              "top_rule": {
+                "text": "제2장 여신 한도\n\n###",
+                "score": 0.477,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c4",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제4조 기업 여신 개별 한도\n기업에 대한 개별 여신한도는 해당 기업의 최근 결산 기준 매출액의 100분의 30을 초과할 수 없다. 다만, 우량 등급(AA 이상)에 한하여 100분의 50까지 가능하다.\n\n###",
+                  "score": 0.429,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제11조 결재선\n여신 금액별 결재선은 다음과 같다.\n- 1억 원 미만: 지점장 전결\n- 1억 원 이상 5억 원 미만: 본부장 결재\n- 5억 원 이상 10억 원 미만: 여신담당 부행장 결재\n- 10억 원 이상 50억 원 미만: 여신심사위원회 심의 후 부행장 승인\n- 50",
+                  "score": 0.422,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "여신 규정 조항에 제2장 여신 한도에 대한 구체적 기준이 명시되지 않아 심사 건과의 직접적 비교 및 판정이 불가능합니다."
+              }
+            },
+            {
+              "query": "담보 LTV 및 채권최고액 설정 기준",
+              "context": "담보",
+              "top_rule": {
+                "text": "제8조 근저당 채권최고액\n근저당권 설정 시 채권최고액은 여신원금의 100분의 120으로 설정함을 원칙으로 한다. 특약에 의한 별도 설정이 필요한 경우 여신심사위원회 의결을 거친다.\n\n###",
+                "score": 0.5,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c11",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제7조 LTV 기준\n부동산 담보의 LTV(담보인정비율)는 감정평가액의 100분의 70 이내로 한다. 주거용 부동산 중 규제 지역은 100분의 60, 비규제 지역은 100분의 70으로 한다.\n\n###",
+                  "score": 0.433,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제10조 후순위 담보\n후순위 근저당은 선순위 채권최고액 합계가 감정가액의 60%를 초과하지 않는 경우에 한하여 제한적으로 허용한다.\n\n##",
+                  "score": 0.427,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "주의",
+                "reason": "담보_채권최고액(₩3,600,000,000)이 대출금액(₩3,000,000,000)의 120%(₩3,600,000,000)와 정확히 일치하지만, 해당 기업의 부채비율(673.1%)과 적자 상태(영업이익 -₩300,000,000, 당기순이익 -₩450,000,000)로 인해 여신심사위원회의 추가 검토가 필요할 수 있음."
+              }
+            },
+            {
+              "query": "기업 여신 재무 비율 기준",
+              "context": "재무",
+              "top_rule": {
+                "text": "제5조 부채비율 기준\n여신 신청 기업의 부채비율은 400%를 초과해서는 안 된다. 부채비율 300% 초과 시 추가 담보 또는 신용보강 수단을 요구한다.\n\n###",
+                "score": 0.516,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c7",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제4조 기업 여신 개별 한도\n기업에 대한 개별 여신한도는 해당 기업의 최근 결산 기준 매출액의 100분의 30을 초과할 수 없다. 다만, 우량 등급(AA 이상)에 한하여 100분의 50까지 가능하다.\n\n###",
+                  "score": 0.469,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제6조 자기자본비율 기준\n자기자본비율이 20% 미만인 기업에 대한 신규 여신은 원칙적으로 제한한다. 자본잠식 상태의 기업은 구조조정 목적 외의 여신을 실행하지 아니한다.\n\n##",
+                  "score": 0.467,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "위반",
+                "reason": "부채비율이 673.1%로 규정에서 정한 400% 한도를 초과하였기 때문에 명백한 위반입니다."
+              }
+            },
+            {
+              "query": "이사회 결의 필요 여부 기준",
+              "context": "절차",
+              "top_rule": {
+                "text": "제12조 이사회 결의 요건\n다음 각 호에 해당하는 여신은 이사회 결의를 필수로 한다.\n1. 여신 금액 50억 원 이상\n2. 동일차주 여신 합계가 자기자본의 100분의 10을 초과하는 경우\n3. 담보 후순위가 설정되는 기업 여신\n4. 기존 여신의 상환 유예 또는 조건 변경 중 중대한 사항\n\n###",
+                "score": 0.431,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c16",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제11조 결재선\n여신 금액별 결재선은 다음과 같다.\n- 1억 원 미만: 지점장 전결\n- 1억 원 이상 5억 원 미만: 본부장 결재\n- 5억 원 이상 10억 원 미만: 여신담당 부행장 결재\n- 10억 원 이상 50억 원 미만: 여신심사위원회 심의 후 부행장 승인\n- 50",
+                  "score": 0.32,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제14조 신용등급 기준\n외부 CB사(NICE, KCB 등)의 최근 신용등급 보고서를 기준으로 한다. BBB 미만 등급의 기업 여신은 신규 실행을 제한하며, 기존 여신은 여신심사위원회 심의 후 유지 여부를 결정한다.\n\n###",
+                  "score": 0.289,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "LLM 응답 파싱 실패: Extra data: line 3 column 1 (char 137)"
+              }
+            },
+            {
+              "query": "신용등급 및 리스크 관리 규정",
+              "context": "리스크",
+              "top_rule": {
+                "text": "제16조 업종 리스크 관리\n특정 업종에 대한 여신 집중도가 총 여신의 100분의 20을 초과하지 않도록 관리한다. 고위험 업종(레버리지 업종, 건설업 일부 등)에 대한 신규 여신은 업종 한도 관리 기준을 준수한다.\n\n##",
+                "score": 0.398,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c21",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제14조 신용등급 기준\n외부 CB사(NICE, KCB 등)의 최근 신용등급 보고서를 기준으로 한다. BBB 미만 등급의 기업 여신은 신규 실행을 제한하며, 기존 여신은 여신심사위원회 심의 후 유지 여부를 결정한다.\n\n###",
+                  "score": 0.38,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제21조 부실 징후 조기 경보\n차주의 매출액이 전년 동기 대비 100분의 30 이상 감소하거나, 신용등급이 2단계 이상 하향 조정되는 경우 조기 경보 대상으로 관리한다.\n\n###",
+                  "score": 0.342,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "주의",
+                "reason": "해당 회사가 고위험 업종(레버리지 업종)에 속하지만, 총 여신 대비 업종 집중도 정보가 없어 규정 준수 여부를 명확히 판단할 수 없음."
+              }
+            }
+          ],
+          "pass_count": 0,
+          "warn_count": 2,
+          "fail_count": 1
+        },
+        "duration_ms": 8570,
+        "finished_at": "2026-04-22T02:09:26.982720"
+      },
+      {
+        "id": "5_report",
+        "title": "심사 의견서 생성",
+        "status": "done",
+        "started_at": "2026-04-22T02:09:26.982726",
+        "output": {
+          "report_markdown": "# 여신 심사 의견서  \n\n## 1. 채무자 및 여신 개요  \n채무자는 (주)퍼스트레버리지로, 기업 운전자금 대출(₩ 3,000,000,000)을 신청함. 담보채권최고액은 ₩ 3,600,000,000이며, 여신 유형 및 금액은 내부 규정상 허용 범위 내임.  \n\n## 2. 재무 현황 분석  \n2023년 기준 매출액 21.80억원, 영업이익 -3.00억원, 당기순이익 -4.50억원으로 영업적자 지속 중. 자산총계 40.20억원 대비 부채총계 35.00억원으로 부채비율 673.1% 기록, 재무 건전성 심각한 취약 상태.  \n\n## 3. 담보 및 보증 현황  \n담보채권최고액(₩ 3,600,000,000)은 대출금액(₩ 3,000,000,000) 대비 120%로 충분하나, 담보물 평가 및 실행 가능성은 추가 검토 필요. 보증인 또는 추가 담보 미기재.  \n\n## 4. 내부 규정 준수 여부  \n규정 위반 1건(대출 한도 초과) 및 주의 2건(재무비율 기준 미달) 발생. 서류완비도 100%이나, 규정 통과(0건) 미달로 승인 불가 요건 존재.  \n\n## 5. 종합 리스크 평가  \nCB등급 [Demo] A(77점), 업종리스크 [Demo] 중위험. 재무리스크 신호(고부채비율, 영업적자) 및 규정 위반으로 인해 신용리스크 및 운영리스크 모두 높은 수준.  \n\n## 6. 심사 의견  \n**불승인**  \n- **근거**:  \n  1) 부채비율 673.1%로 재무 건전성 심각한 취약.  \n  2) 영업적자(-13.76%) 및 당기순이익 적자(-4.50억원)로 상환능력 부족.  \n  3) 내부 규정 위반 1건(대출 한도 초과) 발생.  \n  → 담보 충분성에도 불구하고, 채무 상환 능력 및 규정 미준수로 인해 승인 불가.",
+          "context": {
+            "채무자": "(주)퍼스트레버리지",
+            "여신_유형": "기업 운전자금 대출",
+            "대출금액": "금 삼십억원정 (₩ 3,000,000,000)",
+            "담보채권최고액": "금 삼십육억원정 (₩ 3,600,000,000)",
+            "재무요약": {
+              "매출액": "21.80 억원",
+              "영업이익": "-3.00 억원",
+              "자산총계": "40.20 억원",
+              "부채총계": "35.00 억원",
+              "자본총계": "5.20 억원",
+              "당기순이익": "-4.50 억원"
+            },
+            "재무비율": {
+              "부채비율": 673.1,
+              "자기자본비율": 12.9,
+              "영업이익률": -13.76,
+              "순이익률": -20.64
+            },
+            "재무리스크신호": [
+              {
+                "level": "high",
+                "msg": "부채비율 673.1% — 400% 초과"
+              },
+              {
+                "level": "high",
+                "msg": "영업적자 -13.76%"
+              }
+            ],
+            "cb등급_demo": "A (77점)",
+            "업종리스크_demo": "중위험",
+            "서류완비도": "100% (완비)",
+            "누락서류": [],
+            "규정_통과": 0,
+            "규정_주의": 2,
+            "규정_위반": 1
+          }
+        },
+        "duration_ms": 3606,
+        "finished_at": "2026-04-22T02:09:30.589176"
+      },
+      {
+        "id": "6_decision",
+        "title": "최종 승인 판단",
+        "status": "done",
+        "started_at": "2026-04-22T02:09:30.589183",
+        "output": {
+          "decision": "조건부 승인",
+          "total_score": 69.0,
+          "sub_scores": {
+            "서류_완비도": 100,
+            "재무_건전성": 40,
+            "규정_준수": 59,
+            "신용등급": 77
+          },
+          "reasons": [
+            "재무 경고: 부채비율 673.1% — 400% 초과",
+            "재무 경고: 영업적자 -13.76%",
+            "규정 위반 1건"
+          ],
+          "conditions": [
+            "내부 심사위원회 추가 검토 후 조건부 승인"
+          ],
+          "demo_note": "실제 운영 시 결재선·승인 권한 체크 필요"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:09:30.589212"
+      },
+      {
+        "id": "7_external",
+        "title": "외부 조회 (Demo)",
+        "status": "done",
+        "started_at": "2026-04-22T02:09:30.589214",
+        "output": {
+          "mocks": {
+            "금감원 전자공시 (DART)": {
+              "법인명": "(주)퍼스트레버리지",
+              "summary": "(주)퍼스트레버리지 · 분기보고서 및 최근 공시 이력 확인",
+              "최근_공시": "분기보고서 (2026.Q1)",
+              "감사의견": "조회 결과 참조",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_01_DART공시_(주)퍼스트레버리지.pdf",
+              "source_doc_id": "d6486ace37"
+            },
+            "NICE · KCB 신용조회": {
+              "summary": "기업 신용 등급 · 연체 이력 · 타행 여신 현황 조회",
+              "평가기관": "NICE 평가정보 (주)",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_02_NICE신용평가_(주)퍼스트레버리지.pdf",
+              "source_doc_id": "c380042ec7"
+            },
+            "국세청 홈택스 납세증명": {
+              "summary": "국세 체납 여부 확인 (Mock)",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_03_국세청조회_(주)퍼스트레버리지.pdf",
+              "source_doc_id": "41dfe6bfe6"
+            },
+            "대법원 등기정보광장": {
+              "summary": "법인등기 유효성 · 임원 현황 · 회생/파산 여부 조회",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_04_대법원등기_(주)퍼스트레버리지.pdf",
+              "source_doc_id": "bbfd721404"
+            }
+          },
+          "external_docs": [
+            "DART",
+            "NICE",
+            "TAX",
+            "COURT"
+          ],
+          "demo_note": "실제 연동 시 DART API, 홈택스 API, 대법원 등기정보광장 API, CB사 API 계약 필요"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:09:30.589322"
+      }
+    ],
+    "evidence": [
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "회사명",
+        "value": "(주)퍼스트레버리지",
+        "source_doc_id": "89e99d23f4",
+        "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "대출금액",
+        "value": "금 삼십억원정 (₩ 3,000,000,000)",
+        "source_doc_id": "89e99d23f4",
+        "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "담보_채권최고액",
+        "value": "금 삼십육억원정 (₩ 3,600,000,000)",
+        "source_doc_id": "89e99d23f4",
+        "source_doc_filename": "04_이사회결의서_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "매출액",
+        "value": "2,180,000,000",
+        "source_doc_id": "cfd656bba6",
+        "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "영업이익",
+        "value": "-300,000,000",
+        "source_doc_id": "cfd656bba6",
+        "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "자산총계",
+        "value": "4,020,000,000",
+        "source_doc_id": "cfd656bba6",
+        "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "부채총계",
+        "value": "3,500,000,000",
+        "source_doc_id": "cfd656bba6",
+        "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "자본총계",
+        "value": "520,000,000",
+        "source_doc_id": "cfd656bba6",
+        "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "당기순이익",
+        "value": "-450,000,000",
+        "source_doc_id": "cfd656bba6",
+        "source_doc_filename": "02_재무제표_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "2_classify",
+        "category": "서류 완비도",
+        "title": "기업 운전자금 대출 · 필수서류 5/5",
+        "value": "누락: 없음"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "부채비율",
+        "value": "673.1%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "자기자본비율",
+        "value": "12.9%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "영업이익률",
+        "value": "-13.76%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "순이익률",
+        "value": "-20.64%"
+      },
+      {
+        "step": "3_risk",
+        "category": "외부 신용조회 (Demo)",
+        "title": "NICE CB 등급",
+        "value": "A (77점)",
+        "demo": true
+      },
+      {
+        "step": "3_risk",
+        "category": "업종 리스크 (Demo)",
+        "title": "업종 등급",
+        "value": "중위험",
+        "demo": true
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "여신 한도 기준 및 승인 절차",
+        "value": "[미판정] 여신 규정 조항에 제2장 여신 한도에 대한 구체적 기준이 명시되지 않아 심사 건과의 직접적 비교 및 판정이 불가능합니다.",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제2장 여신 한도\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "담보 LTV 및 채권최고액 설정 기준",
+        "value": "[주의] 담보_채권최고액(₩3,600,000,000)이 대출금액(₩3,000,000,000)의 120%(₩3,600,000,000)와 정확히 일치하지만, 해당 기업의 부채비율(673.1%)과 적자 상태(영업이익 -₩300,0",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제8조 근저당 채권최고액\n근저당권 설정 시 채권최고액은 여신원금의 100분의 120으로 설정함을 원칙으로 한다. 특약에 의한 별도 설정이 필요한 경우 여신심사위원회 의결을 거친다.\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "기업 여신 재무 비율 기준",
+        "value": "[위반] 부채비율이 673.1%로 규정에서 정한 400% 한도를 초과하였기 때문에 명백한 위반입니다.",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제5조 부채비율 기준\n여신 신청 기업의 부채비율은 400%를 초과해서는 안 된다. 부채비율 300% 초과 시 추가 담보 또는 신용보강 수단을 요구한다.\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "이사회 결의 필요 여부 기준",
+        "value": "[미판정] LLM 응답 파싱 실패: Extra data: line 3 column 1 (char 137)",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제12조 이사회 결의 요건\n다음 각 호에 해당하는 여신은 이사회 결의를 필수로 한다.\n1. 여신 금액 50억 원 이상\n2. 동일차주 여신 합계가 자기자본의 100분의 10을 초과하는 경우\n3. 담보 후순위가 설정되는 기업 여신\n4. 기존 여신의 상환 유예 또는 조건 변경 중 중대한 사항\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "신용등급 및 리스크 관리 규정",
+        "value": "[주의] 해당 회사가 고위험 업종(레버리지 업종)에 속하지만, 총 여신 대비 업종 집중도 정보가 없어 규정 준수 여부를 명확히 판단할 수 없음.",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제16조 업종 리스크 관리\n특정 업종에 대한 여신 집중도가 총 여신의 100분의 20을 초과하지 않도록 관리한다. 고위험 업종(레버리지 업종, 건설업 일부 등)에 대한 신규 여신은 업종 한도 관리 기준을 준수한다.\n\n##"
+      },
+      {
+        "step": "5_report",
+        "category": "자동 생성 의견서",
+        "title": "여신 심사의견서",
+        "value": "852 chars, Solar-pro generated"
+      },
+      {
+        "step": "6_decision",
+        "category": "최종 판정",
+        "title": "조건부 승인",
+        "value": "종합 점수 69.0/100 · 재무 경고: 부채비율 673.1% — 400% 초과, 재무 경고: 영업적자 -13.76%, 규정 위반 1건"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "금감원 전자공시 (DART)",
+        "value": "(주)퍼스트레버리지 · 분기보고서 및 최근 공시 이력 확인",
+        "demo": true,
+        "source_doc_id": "d6486ace37",
+        "source_doc_filename": "ext_01_DART공시_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "NICE · KCB 신용조회",
+        "value": "기업 신용 등급 · 연체 이력 · 타행 여신 현황 조회",
+        "demo": true,
+        "source_doc_id": "c380042ec7",
+        "source_doc_filename": "ext_02_NICE신용평가_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "국세청 홈택스 납세증명",
+        "value": "국세 체납 여부 확인 (Mock)",
+        "demo": true,
+        "source_doc_id": "41dfe6bfe6",
+        "source_doc_filename": "ext_03_국세청조회_(주)퍼스트레버리지.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "대법원 등기정보광장",
+        "value": "법인등기 유효성 · 임원 현황 · 회생/파산 여부 조회",
+        "demo": true,
+        "source_doc_id": "bbfd721404",
+        "source_doc_filename": "ext_04_대법원등기_(주)퍼스트레버리지.pdf"
+      }
+    ],
+    "started_at": "2026-04-22T02:09:18.412315",
+    "finished_at": "2026-04-22T02:09:30.589324"
+  },
+  "case-efe83d822b": {
+    "id": "case-efe83d822b",
+    "title": "(주)침체테크 · 운전자금 100억 (REJECT)",
+    "doc_ids": [
+      "be864334df",
+      "7d92f3baff",
+      "87379d2089"
+    ],
+    "loan_type_hint": null,
+    "status": "done",
+    "created_at": "2026-04-22T02:10:10.995505",
+    "steps": [
+      {
+        "id": "1_intake",
+        "title": "접수 · 데이터 추출",
+        "status": "done",
+        "started_at": "2026-04-22T02:10:11.033195",
+        "output": {
+          "docs": [
+            {
+              "doc_id": "be864334df",
+              "filename": "01_사업자등록증_(주)침체테크.pdf",
+              "doc_type": "business_registration",
+              "extracted_field_count": 12,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "7d92f3baff",
+              "filename": "02_재무제표_(주)침체테크.pdf",
+              "doc_type": "financial_statement",
+              "extracted_field_count": 14,
+              "has_extraction": true
+            },
+            {
+              "doc_id": "87379d2089",
+              "filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "doc_type": "credit_agreement",
+              "extracted_field_count": 19,
+              "has_extraction": true
+            }
+          ],
+          "field_index": {
+            "등록번호": {
+              "value": "317-86-81204",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "법인구분": {
+              "value": "법인",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "상호": {
+              "value": "(주)침체테크",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "대표자": {
+              "value": "최지훈",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "법인등록번호": {
+              "value": "110111-4492815",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "개업연월일": {
+              "value": "2012년 05월 22일",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업장_소재지": {
+              "value": "경기도 성남시 분당구 정자일로 95 (정자동)",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "본점_소재지": {
+              "value": "경기도 성남시 분당구 정자일로 95 (정자동)",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업의_종류_업태": {
+              "value": "도매 및 소매업",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "사업의_종류_종목": {
+              "value": "전자제품 도매",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "발급일자": {
+              "value": "2025년 03월 11일",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "발급기관": {
+              "value": "강남세무서장",
+              "source_doc_id": "be864334df",
+              "source_doc_filename": "01_사업자등록증_(주)침체테크.pdf",
+              "source_doc_type": "business_registration"
+            },
+            "회사명": {
+              "value": "(주)침체테크",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "결산일_당기": {
+              "value": "2024-12-31",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "회계기준": {
+              "value": "일반적으로 인정되는 회계처리기준",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "감사의견": {
+              "value": "부적정",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "감사인": {
+              "value": "(주)정직회계법인",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "단위": {
+              "value": "원",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "재무상태표_테이블": {
+              "value": "[{\"항목\": \"유동자산\", \"당기\": \"620,000,000\", \"전기\": \"1,030,000,000\", \"전전기\": \"\"}, {\"항목\": \"비유동자산\", \"당기\": \"4,580,000,000\", \"전기\": \"4,820,000,000\", \"전전기\": \"\"}, {\"항목\": \"자 산 총 계\", \"당기\": \"5,200,000,000\", \"전기\": \"5,850,",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "손익계산서_테이블": {
+              "value": "[{\"항목\": \"매 출 액\", \"당기\": \"1,340,000,000\", \"전기\": \"2,100,000,000\", \"전전기\": \"\"}, {\"항목\": \"매 출 원 가\", \"당기\": \"1,480,000,000\", \"전기\": \"2,080,000,000\", \"전전기\": \"\"}, {\"항목\": \"매 출 총 이 익\", \"당기\": \"-140,000,000\", \"전기\": \"",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자산총계": {
+              "value": "5,200,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "부채총계": {
+              "value": "5,880,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자본총계": {
+              "value": "-680,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "매출액": {
+              "value": "1,340,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "영업이익": {
+              "value": "-750,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "당기순이익": {
+              "value": "-980,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "여신과목": {
+              "value": "일반자금대출",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신한도금액": {
+              "value": "금 백억원정 (₩ 10,000,000,000)",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_연도": {
+              "value": "2025",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_월": {
+              "value": "05",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신개시일_일": {
+              "value": "01",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_연도": {
+              "value": "2025",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_월": {
+              "value": "10",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_일": {
+              "value": "31",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "여신기간만료일_개월수": {
+              "value": "6",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_체크": {
+              "value": true,
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_신규_체크": {
+              "value": true,
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_COFIX_이율": {
+              "value": "1.35%",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_기타_체크": {
+              "value": true,
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "변동금리_기타_기재": {
+              "value": "COFIX 기준금리 MOR",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "기준금리_재산정주기_개월": {
+              "value": "6",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "상환방법_일시_체크": {
+              "value": true,
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "상환방법_분할_체크": {
+              "value": true,
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "거치기간_월": {
+              "value": "6",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            },
+            "접수번호": {
+              "value": "2025-0501-317868",
+              "source_doc_id": "87379d2089",
+              "source_doc_filename": "03_여신거래약정서_(주)침체테크.pdf",
+              "source_doc_type": "credit_agreement"
+            }
+          },
+          "headline": {
+            "회사명": {
+              "value": "(주)침체테크",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "대출금액": null,
+            "담보_채권최고액": null,
+            "매출액": {
+              "value": "1,340,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "영업이익": {
+              "value": "-750,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자산총계": {
+              "value": "5,200,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "부채총계": {
+              "value": "5,880,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "자본총계": {
+              "value": "-680,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            },
+            "당기순이익": {
+              "value": "-980,000,000",
+              "source_doc_id": "7d92f3baff",
+              "source_doc_filename": "02_재무제표_(주)침체테크.pdf",
+              "source_doc_type": "financial_statement"
+            }
+          },
+          "total_docs": 3,
+          "total_fields_across_docs": 45
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:10:11.033295"
+      },
+      {
+        "id": "2_classify",
+        "title": "서류 분류 · 완비도",
+        "status": "done",
+        "started_at": "2026-04-22T02:10:11.033297",
+        "output": {
+          "detected_loan_type": "기업 운전자금",
+          "loan_type_label": "기업 운전자금 대출",
+          "required": [
+            "credit_agreement",
+            "financial_statement",
+            "business_registration",
+            "board_resolution",
+            "local_tax_certificate"
+          ],
+          "optional": [
+            "real_estate_title",
+            "mortgage",
+            "bank_account_copy"
+          ],
+          "present": [
+            "credit_agreement",
+            "financial_statement",
+            "business_registration"
+          ],
+          "missing": [
+            "board_resolution",
+            "local_tax_certificate"
+          ],
+          "optional_present": [],
+          "coverage": 0.6,
+          "coverage_pct": 60,
+          "completeness_verdict": "미흡"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:10:11.033313"
+      },
+      {
+        "id": "3_risk",
+        "title": "리스크 평가",
+        "status": "done",
+        "started_at": "2026-04-22T02:10:11.033315",
+        "output": {
+          "ratios": {
+            "부채비율": -864.7,
+            "자기자본비율": -13.1,
+            "영업이익률": -55.97,
+            "순이익률": -73.13
+          },
+          "signals": [
+            {
+              "level": "high",
+              "msg": "영업적자 -55.97%"
+            },
+            {
+              "level": "high",
+              "msg": "자본잠식 — 자본총계 < 0"
+            }
+          ],
+          "cb_score_demo": 77,
+          "cb_grade_demo": "A",
+          "industry_risk_demo": "중위험",
+          "summary": {
+            "매출액": "13.40 억원",
+            "영업이익": "-7.50 억원",
+            "자산총계": "52.00 억원",
+            "부채총계": "58.80 억원",
+            "자본총계": "-6.80 억원",
+            "당기순이익": "-9.80 억원"
+          }
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:10:11.033432"
+      },
+      {
+        "id": "4_regulations",
+        "title": "여신 규정 체크 (RAG)",
+        "status": "done",
+        "started_at": "2026-04-22T02:10:11.033434",
+        "output": {
+          "regulation_count": 1,
+          "queries": [
+            {
+              "q": "기업 여신 재무 비율 기준",
+              "context": "재무"
+            },
+            {
+              "q": "이사회 결의 필요 여부 기준",
+              "context": "절차"
+            },
+            {
+              "q": "신용등급 및 리스크 관리 규정",
+              "context": "리스크"
+            }
+          ],
+          "rule_judgments": [
+            {
+              "query": "기업 여신 재무 비율 기준",
+              "context": "재무",
+              "top_rule": {
+                "text": "제5조 부채비율 기준\n여신 신청 기업의 부채비율은 400%를 초과해서는 안 된다. 부채비율 300% 초과 시 추가 담보 또는 신용보강 수단을 요구한다.\n\n###",
+                "score": 0.516,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c7",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제4조 기업 여신 개별 한도\n기업에 대한 개별 여신한도는 해당 기업의 최근 결산 기준 매출액의 100분의 30을 초과할 수 없다. 다만, 우량 등급(AA 이상)에 한하여 100분의 50까지 가능하다.\n\n###",
+                  "score": 0.469,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제6조 자기자본비율 기준\n자기자본비율이 20% 미만인 기업에 대한 신규 여신은 원칙적으로 제한한다. 자본잠식 상태의 기업은 구조조정 목적 외의 여신을 실행하지 아니한다.\n\n##",
+                  "score": 0.467,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "위반",
+                "reason": "부채비율이 -864.7%로 400%를 초과하였으며, 자본총계가 음수(-680,000,000)로 재무 상태가 극히 취약하여 규정 제5조를 명백히 위반함."
+              }
+            },
+            {
+              "query": "이사회 결의 필요 여부 기준",
+              "context": "절차",
+              "top_rule": {
+                "text": "제12조 이사회 결의 요건\n다음 각 호에 해당하는 여신은 이사회 결의를 필수로 한다.\n1. 여신 금액 50억 원 이상\n2. 동일차주 여신 합계가 자기자본의 100분의 10을 초과하는 경우\n3. 담보 후순위가 설정되는 기업 여신\n4. 기존 여신의 상환 유예 또는 조건 변경 중 중대한 사항\n\n###",
+                "score": 0.431,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c16",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제11조 결재선\n여신 금액별 결재선은 다음과 같다.\n- 1억 원 미만: 지점장 전결\n- 1억 원 이상 5억 원 미만: 본부장 결재\n- 5억 원 이상 10억 원 미만: 여신담당 부행장 결재\n- 10억 원 이상 50억 원 미만: 여신심사위원회 심의 후 부행장 승인\n- 50",
+                  "score": 0.321,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제14조 신용등급 기준\n외부 CB사(NICE, KCB 등)의 최근 신용등급 보고서를 기준으로 한다. BBB 미만 등급의 기업 여신은 신규 실행을 제한하며, 기존 여신은 여신심사위원회 심의 후 유지 여부를 결정한다.\n\n###",
+                  "score": 0.289,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "심사 건 데이터에 여신 금액, 동일차주 여신 합계, 담보 후순위 설정 여부, 상환 유예 또는 조건 변경 사항 등 규정 조항과 직접 관련된 정보가 없음"
+              }
+            },
+            {
+              "query": "신용등급 및 리스크 관리 규정",
+              "context": "리스크",
+              "top_rule": {
+                "text": "제16조 업종 리스크 관리\n특정 업종에 대한 여신 집중도가 총 여신의 100분의 20을 초과하지 않도록 관리한다. 고위험 업종(레버리지 업종, 건설업 일부 등)에 대한 신규 여신은 업종 한도 관리 기준을 준수한다.\n\n##",
+                "score": 0.398,
+                "source_filename": "여신내규_기업편_가상.md",
+                "chunk_id": "reg-54df372384-c21",
+                "page": 1
+              },
+              "other_hits": [
+                {
+                  "text": "제14조 신용등급 기준\n외부 CB사(NICE, KCB 등)의 최근 신용등급 보고서를 기준으로 한다. BBB 미만 등급의 기업 여신은 신규 실행을 제한하며, 기존 여신은 여신심사위원회 심의 후 유지 여부를 결정한다.\n\n###",
+                  "score": 0.38,
+                  "filename": "여신내규_기업편_가상.md"
+                },
+                {
+                  "text": "제21조 부실 징후 조기 경보\n차주의 매출액이 전년 동기 대비 100분의 30 이상 감소하거나, 신용등급이 2단계 이상 하향 조정되는 경우 조기 경보 대상으로 관리한다.\n\n###",
+                  "score": 0.342,
+                  "filename": "여신내규_기업편_가상.md"
+                }
+              ],
+              "judgment": {
+                "verdict": "미판정",
+                "reason": "심사 건 데이터에 업종 정보가 없어 규정 조항 제16조(업종 리스크 관리) 적용 여부를 판단할 수 없음"
+              }
+            }
+          ],
+          "pass_count": 0,
+          "warn_count": 0,
+          "fail_count": 1
+        },
+        "duration_ms": 5358,
+        "finished_at": "2026-04-22T02:10:16.392190"
+      },
+      {
+        "id": "5_report",
+        "title": "심사 의견서 생성",
+        "status": "done",
+        "started_at": "2026-04-22T02:10:16.392200",
+        "output": {
+          "report_markdown": "# 여신 심사 의견서  \n\n## 1. 채무자 및 여신 개요  \n채무자는 (주)침체테크로, 기업 운전자금 대출 신청 건이다. 대출금액과 담보채권최고액은 미기재되었으며, 재무 및 리스크 데이터를 기반으로 심사가 진행된다.  \n\n## 2. 재무 현황 분석  \n2023년 기준 매출액 13.40억원, 영업이익 -7.50억원, 당기순이익 -9.80억원으로 심각한 영업적자 상태이다. 자산총계 52.00억원 대비 부채총계 58.80억원으로 자본총계 -6.80억원의 자본잠식 상태이다.  \n\n## 3. 담보 및 보증 현황  \n담보 관련 정보가 미기재되었으며, CB등급은 [Demo] 기준 A(77점)로 나타났다. 단, 재무리스크 신호에서 \"영업적자 -55.97%\" 및 \"자본잠식\" 등 고위험 요소가 확인되었다.  \n\n## 4. 내부 규정 준수 여부  \n규정 위반 1건(규정_위반: 1)이 확인되었으며, 서류완비도는 60%(미흡)로 이사회 결의서(board_resolution) 및 지방세 완납증명서(local_tax_certificate)가 누락되었다.  \n\n## 5. 종합 리스크 평가  \n재무비율(부채비율 -864.7%, 자기자본비율 -13.1%)과 업종리스크 [Demo] \"중위험\"을 고려할 때, 채무 상환 능력이 극히 낮은 고위험 건으로 판단된다.  \n\n## 6. 심사 의견  \n**불승인**  \n- **근거**:  \n  1. 자본잠식(-6.80억원) 및 심각한 영업적자(-55.97%)로 재무 건전성 결여.  \n  2. 내부 규정 위반 1건 및 서류 미흡(60%)으로 심사 기준 미충족.  \n  3. CB등급 A(77점)지만 재무리스크 신호(high)가 다수 존재하여 신용위험 과다.",
+          "context": {
+            "채무자": "(주)침체테크",
+            "여신_유형": "기업 운전자금 대출",
+            "대출금액": "",
+            "담보채권최고액": "",
+            "재무요약": {
+              "매출액": "13.40 억원",
+              "영업이익": "-7.50 억원",
+              "자산총계": "52.00 억원",
+              "부채총계": "58.80 억원",
+              "자본총계": "-6.80 억원",
+              "당기순이익": "-9.80 억원"
+            },
+            "재무비율": {
+              "부채비율": -864.7,
+              "자기자본비율": -13.1,
+              "영업이익률": -55.97,
+              "순이익률": -73.13
+            },
+            "재무리스크신호": [
+              {
+                "level": "high",
+                "msg": "영업적자 -55.97%"
+              },
+              {
+                "level": "high",
+                "msg": "자본잠식 — 자본총계 < 0"
+              }
+            ],
+            "cb등급_demo": "A (77점)",
+            "업종리스크_demo": "중위험",
+            "서류완비도": "60% (미흡)",
+            "누락서류": [
+              "board_resolution",
+              "local_tax_certificate"
+            ],
+            "규정_통과": 0,
+            "규정_주의": 0,
+            "규정_위반": 1
+          }
+        },
+        "duration_ms": 3230,
+        "finished_at": "2026-04-22T02:10:19.623067"
+      },
+      {
+        "id": "6_decision",
+        "title": "최종 승인 판단",
+        "status": "done",
+        "started_at": "2026-04-22T02:10:19.623079",
+        "output": {
+          "decision": "승인 거절",
+          "total_score": 63.0,
+          "sub_scores": {
+            "서류_완비도": 60.0,
+            "재무_건전성": 40,
+            "규정_준수": 75,
+            "신용등급": 77
+          },
+          "reasons": [
+            "자본잠식 상태",
+            "필수서류 2종 누락: board_resolution, local_tax_certificate",
+            "재무 경고: 영업적자 -55.97%",
+            "재무 경고: 자본잠식 — 자본총계 < 0",
+            "규정 위반 1건"
+          ],
+          "conditions": [
+            "누락 서류(board_resolution, local_tax_certificate) 보완 제출"
+          ],
+          "demo_note": "실제 운영 시 결재선·승인 권한 체크 필요"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:10:19.623120"
+      },
+      {
+        "id": "7_external",
+        "title": "외부 조회 (Demo)",
+        "status": "done",
+        "started_at": "2026-04-22T02:10:19.623123",
+        "output": {
+          "mocks": {
+            "금감원 전자공시 (DART)": {
+              "법인명": "(주)침체테크",
+              "summary": "(주)침체테크 · 분기보고서 및 최근 공시 이력 확인",
+              "최근_공시": "분기보고서 (2026.Q1)",
+              "감사의견": "조회 결과 참조",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_01_DART공시_(주)침체테크.pdf",
+              "source_doc_id": "1364b59d11"
+            },
+            "NICE · KCB 신용조회": {
+              "summary": "기업 신용 등급 · 연체 이력 · 타행 여신 현황 조회",
+              "평가기관": "NICE 평가정보 (주)",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_02_NICE신용평가_(주)침체테크.pdf",
+              "source_doc_id": "644c35ae3a"
+            },
+            "국세청 홈택스 납세증명": {
+              "summary": "국세 체납 여부 확인 (Mock)",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_03_국세청조회_(주)침체테크.pdf",
+              "source_doc_id": "9a4f902f70"
+            },
+            "대법원 등기정보광장": {
+              "summary": "법인등기 유효성 · 임원 현황 · 회생/파산 여부 조회",
+              "status": "조회 완료 (Demo)",
+              "source_filename": "ext_04_대법원등기_(주)침체테크.pdf",
+              "source_doc_id": "ee98d36389"
+            }
+          },
+          "external_docs": [
+            "DART",
+            "NICE",
+            "TAX",
+            "COURT"
+          ],
+          "demo_note": "실제 연동 시 DART API, 홈택스 API, 대법원 등기정보광장 API, CB사 API 계약 필요"
+        },
+        "duration_ms": 0,
+        "finished_at": "2026-04-22T02:10:19.623380"
+      }
+    ],
+    "evidence": [
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "회사명",
+        "value": "(주)침체테크",
+        "source_doc_id": "7d92f3baff",
+        "source_doc_filename": "02_재무제표_(주)침체테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "매출액",
+        "value": "1,340,000,000",
+        "source_doc_id": "7d92f3baff",
+        "source_doc_filename": "02_재무제표_(주)침체테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "영업이익",
+        "value": "-750,000,000",
+        "source_doc_id": "7d92f3baff",
+        "source_doc_filename": "02_재무제표_(주)침체테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "자산총계",
+        "value": "5,200,000,000",
+        "source_doc_id": "7d92f3baff",
+        "source_doc_filename": "02_재무제표_(주)침체테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "부채총계",
+        "value": "5,880,000,000",
+        "source_doc_id": "7d92f3baff",
+        "source_doc_filename": "02_재무제표_(주)침체테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "자본총계",
+        "value": "-680,000,000",
+        "source_doc_id": "7d92f3baff",
+        "source_doc_filename": "02_재무제표_(주)침체테크.pdf"
+      },
+      {
+        "step": "1_intake",
+        "category": "데이터 추출",
+        "title": "당기순이익",
+        "value": "-980,000,000",
+        "source_doc_id": "7d92f3baff",
+        "source_doc_filename": "02_재무제표_(주)침체테크.pdf"
+      },
+      {
+        "step": "2_classify",
+        "category": "서류 완비도",
+        "title": "기업 운전자금 대출 · 필수서류 3/5",
+        "value": "누락: board_resolution, local_tax_certificate"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "부채비율",
+        "value": "-864.7%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "자기자본비율",
+        "value": "-13.1%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "영업이익률",
+        "value": "-55.97%"
+      },
+      {
+        "step": "3_risk",
+        "category": "재무 비율",
+        "title": "순이익률",
+        "value": "-73.13%"
+      },
+      {
+        "step": "3_risk",
+        "category": "외부 신용조회 (Demo)",
+        "title": "NICE CB 등급",
+        "value": "A (77점)",
+        "demo": true
+      },
+      {
+        "step": "3_risk",
+        "category": "업종 리스크 (Demo)",
+        "title": "업종 등급",
+        "value": "중위험",
+        "demo": true
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "기업 여신 재무 비율 기준",
+        "value": "[위반] 부채비율이 -864.7%로 400%를 초과하였으며, 자본총계가 음수(-680,000,000)로 재무 상태가 극히 취약하여 규정 제5조를 명백히 위반함.",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제5조 부채비율 기준\n여신 신청 기업의 부채비율은 400%를 초과해서는 안 된다. 부채비율 300% 초과 시 추가 담보 또는 신용보강 수단을 요구한다.\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "이사회 결의 필요 여부 기준",
+        "value": "[미판정] 심사 건 데이터에 여신 금액, 동일차주 여신 합계, 담보 후순위 설정 여부, 상환 유예 또는 조건 변경 사항 등 규정 조항과 직접 관련된 정보가 없음",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제12조 이사회 결의 요건\n다음 각 호에 해당하는 여신은 이사회 결의를 필수로 한다.\n1. 여신 금액 50억 원 이상\n2. 동일차주 여신 합계가 자기자본의 100분의 10을 초과하는 경우\n3. 담보 후순위가 설정되는 기업 여신\n4. 기존 여신의 상환 유예 또는 조건 변경 중 중대한 사항\n\n###"
+      },
+      {
+        "step": "4_regulations",
+        "category": "규정 인용",
+        "title": "신용등급 및 리스크 관리 규정",
+        "value": "[미판정] 심사 건 데이터에 업종 정보가 없어 규정 조항 제16조(업종 리스크 관리) 적용 여부를 판단할 수 없음",
+        "source_regulation": "여신내규_기업편_가상.md",
+        "rule_text": "제16조 업종 리스크 관리\n특정 업종에 대한 여신 집중도가 총 여신의 100분의 20을 초과하지 않도록 관리한다. 고위험 업종(레버리지 업종, 건설업 일부 등)에 대한 신규 여신은 업종 한도 관리 기준을 준수한다.\n\n##"
+      },
+      {
+        "step": "5_report",
+        "category": "자동 생성 의견서",
+        "title": "여신 심사의견서",
+        "value": "828 chars, Solar-pro generated"
+      },
+      {
+        "step": "6_decision",
+        "category": "최종 판정",
+        "title": "승인 거절",
+        "value": "종합 점수 63.0/100 · 자본잠식 상태, 필수서류 2종 누락: board_resolution, local_tax_certificate, 재무 경고: 영업적자 -55.97%, 재무 경고: 자본잠식 — 자본총계 < 0, 규정 위반 1건"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "금감원 전자공시 (DART)",
+        "value": "(주)침체테크 · 분기보고서 및 최근 공시 이력 확인",
+        "demo": true,
+        "source_doc_id": "1364b59d11",
+        "source_doc_filename": "ext_01_DART공시_(주)침체테크.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "NICE · KCB 신용조회",
+        "value": "기업 신용 등급 · 연체 이력 · 타행 여신 현황 조회",
+        "demo": true,
+        "source_doc_id": "644c35ae3a",
+        "source_doc_filename": "ext_02_NICE신용평가_(주)침체테크.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "국세청 홈택스 납세증명",
+        "value": "국세 체납 여부 확인 (Mock)",
+        "demo": true,
+        "source_doc_id": "9a4f902f70",
+        "source_doc_filename": "ext_03_국세청조회_(주)침체테크.pdf"
+      },
+      {
+        "step": "7_external",
+        "category": "외부 시스템 (Demo)",
+        "title": "대법원 등기정보광장",
+        "value": "법인등기 유효성 · 임원 현황 · 회생/파산 여부 조회",
+        "demo": true,
+        "source_doc_id": "ee98d36389",
+        "source_doc_filename": "ext_04_대법원등기_(주)침체테크.pdf"
+      }
+    ],
+    "started_at": "2026-04-22T02:10:11.033188",
+    "finished_at": "2026-04-22T02:10:19.623383"
+  }
+}

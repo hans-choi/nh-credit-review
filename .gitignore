@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# Environment — never commit secrets
+.env
+.env.local
+*.env.backup
+
+# Local runtime data (persisted to Render disk, not repo)
+# Anchored with leading slash so they only match at repo root —
+# NOT inside backend/seed/uploads/ or backend/seed/data/ (those ARE committed).
+/backend/uploads/
+/backend/data/
+/uploads/
+/data/
+
+# NOTE: backend/seed/ IS committed — it's the baked baseline for the Docker image
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs
+*.log
+
+# Claude Code session state
+.claude/launch.json
+.claude/projects/
+.claude/shell-snapshots/
+.claude/todos/
+.claude/statsig/
+
+# Node
+node_modules/

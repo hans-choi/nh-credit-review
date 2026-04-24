@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: nh-credit-review
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter                  # starter supports persistent disks; free tier spins down after 15min
+    region: singapore              # closest to Korea
+    envVars:
+      - key: UPSTAGE_API_KEY
+        sync: false                # set manually in Render dashboard for security
+      - key: UPLOAD_DIR
+        value: /data/uploads
+      - key: DATA_DIR
+        value: /data/store
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    disk:
+      name: nh-credit-data
+      mountPath: /data
+      sizeGB: 1
+    healthCheckPath: /api/health
