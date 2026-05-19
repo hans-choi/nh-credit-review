@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NH 여신심사 AI 판독 시스템</title>
+<title>여신심사 AI 판독 시스템</title>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -100,6 +100,9 @@ a { color: inherit; text-decoration: none; }
   padding:1px 6px; border-radius:8px; font-weight:600;
 }
 .nav-item.active .nav-badge { background:rgba(0,121,63,.35); color:#e8f5ed; }
+.nav-item.nav-empty { color:var(--g500); }
+.nav-item.nav-empty:hover { color:var(--g300); }
+.nav-item.nav-empty .nav-ic { opacity:.55; }
 .nav-featured .nav-star {
   color:var(--brand); font-size:10px; opacity:.75; margin-left:auto;
 }
@@ -1248,7 +1251,7 @@ mark { background: #fff4bf; color: var(--g900); padding: 0 2px; border-radius: 2
       <div class="nav-item" data-view="internal"><span class="nav-ic"><svg><use href="#i-external"/></svg></span><span class="nav-label">내부 시스템 연동</span></div>
       <div class="nav-item" data-view="usage"><span class="nav-ic"><svg><use href="#i-chart"/></svg></span><span class="nav-label">API 사용량</span></div>
 
-      <div class="nav-section">판독 문서 (13종)</div>
+      <div class="nav-section">판독 문서 (20종)</div>
       <div id="sidebar-doctypes"></div>
     </nav>
 
@@ -1287,7 +1290,7 @@ mark { background: #fff4bf; color: var(--g900); padding: 0 2px; border-radius: 2
         <div class="dash-grid">
           <div class="dash-welcome">
             <div class="dash-welcome-title">여신심사 AI 판독 대시보드</div>
-            <div class="dash-welcome-sub">농협은행 여신 심사 서류 6종에서 키밸류·테이블 정보를 자동 추출하고, 7단계 자동 심사 파이프라인으로 판정까지 연결합니다. Upstage Document Parse Enhanced · Information Extract · Solar-pro · Embeddings 기반.</div>
+            <div class="dash-welcome-sub">은행/금융기관 여신 심사 서류에서 키밸류·테이블 정보를 자동 추출하고, 7단계 자동 심사 파이프라인으로 판정까지 연결합니다. Upstage Document Parse Enhanced · Information Extract · Solar-pro · Embeddings 기반.</div>
             <div class="dash-welcome-status">
               <span class="dash-welcome-status-dot"></span>
               <span id="dash-welcome-status-text">시스템 정상 · Upstage API 연결됨</span>
@@ -1553,6 +1556,14 @@ const DOC_ICON_MAP = {
   retirement_income_tax: 'i-receipt',
   local_tax_certificate: 'i-doc',
   bank_account_copy: 'i-coins',
+  // 신규 7종 (장려금/소득 증빙 확장)
+  comprehensive_income_tax_return: 'i-receipt',
+  pay_slip: 'i-coins',
+  national_pension_payment_cert: 'i-doc',
+  employment_insurance_worker_assessment: 'i-scale',
+  bank_transaction_history: 'i-list',
+  income_payment_cert: 'i-receipt',
+  salary_history_cert: 'i-doc',
 };
 
 // ────────────────────────────────────────────
@@ -1824,17 +1835,67 @@ function renderDocTabs() {
 // ────────────────────────────────────────────
 // Sidebar doc types
 // ────────────────────────────────────────────
-function renderSidebarDocTypes() {
+async function renderSidebarDocTypes() {
   const c = document.getElementById('sidebar-doctypes');
-  c.innerHTML = state.docTypes.map(dt => `
-    <div class="nav-item" data-dt="${dt.key}">
+
+  // Lazy-load all docs (cached on state) so we can show per-type counts.
+  if (!state.documents || !state.documents.length) {
+    try { state.documents = await api.listDocs(); } catch (_) { state.documents = []; }
+  }
+  const countByType = {};
+  state.documents.forEach(d => { countByType[d.doc_type] = (countByType[d.doc_type]||0)+1; });
+
+  c.innerHTML = state.docTypes.map(dt => {
+    const n = countByType[dt.key] || 0;
+    const isEmpty = n === 0;
+    return `<div class="nav-item ${isEmpty ? 'nav-empty' : ''}" data-dt="${dt.key}" title="${escapeAttr(dt.label)}">
       <span class="nav-ic">${icon(DOC_ICON_MAP[dt.key]||'i-doc', 14)}</span>
       <span class="nav-label">${escapeHtml(dt.label_short)}</span>
-    </div>
-  `).join('');
+      ${n ? `<span class="nav-badge">${n}</span>` : ''}
+    </div>`;
+  }).join('');
+
   c.querySelectorAll('.nav-item').forEach(n => {
-    n.onclick = () => goUpload(n.dataset.dt);
+    n.onclick = () => openDocTypeQuick(n.dataset.dt);
   });
+}
+
+// Click a sidebar doc-type → instantly open the most recent existing doc of that type
+// in detail view, AND pre-populate the topbar tabs with the latest N docs of the
+// same type so demo flow is one-click.
+async function openDocTypeQuick(docTypeKey) {
+  // Make sure we have a fresh doc list
+  state.documents = await api.listDocs();
+  const sameType = state.documents
+    .filter(d => d.doc_type === docTypeKey)
+    .sort((a,b) => (b.uploaded_at||'').localeCompare(a.uploaded_at||''));
+
+  if (!sameType.length) {
+    // Fallback: no existing doc → upload view
+    goUpload(docTypeKey);
+    return;
+  }
+
+  // Pre-load up to N latest as openDocs tabs (most recent first)
+  const N = 10;
+  const top = sameType.slice(0, N);
+  // Drop any other-type tabs already present? No — keep across types, doc tabs filter by active type.
+  // Add new entries to the front (preserving order), avoiding duplicates.
+  const existingIds = new Set(state.openDocs.map(d => d.id));
+  const toAdd = top
+    .filter(d => !existingIds.has(d.id))
+    .map(d => ({
+      id: d.id, filename: d.filename, doc_type: d.doc_type,
+      has_extraction: !!d.has_extraction,
+    }));
+  state.openDocs = [...toAdd, ...state.openDocs];
+
+  // Reset paging offset for this type so the latest tab is visible
+  state.tabPageOffset = state.tabPageOffset || {};
+  state.tabPageOffset[docTypeKey] = 0;
+
+  // Open the most recent in detail view
+  await goDetail(top[0].id);
 }
 
 // ────────────────────────────────────────────
@@ -1844,6 +1905,8 @@ async function renderHome() {
   state.documents = await api.listDocs();
   const usage = await api.usage().catch(() => ({ stats:{total_calls:0}, logs:[] }));
   document.getElementById('nav-badge-docs').textContent = state.documents.length;
+  // Keep sidebar per-type counts in sync with the latest doc list
+  renderSidebarDocTypes();
 
   const byType = {};
   state.documents.forEach(d => { byType[d.doc_type] = (byType[d.doc_type]||0)+1; });
@@ -2224,6 +2287,8 @@ async function handleUpload(fileList) {
     renderDocTabs();
   }
   document.getElementById('batch-status').textContent = '전체 완료';
+  // Refresh sidebar counts to reflect newly uploaded docs
+  try { state.documents = await api.listDocs(); renderSidebarDocTypes(); } catch (_) {}
   if (uploadedIds.length > 0) setTimeout(() => goDetail(uploadedIds[0]), 400);
 }
 
@@ -2932,6 +2997,8 @@ async function deleteDoc(id) {
   await api.del(id);
   const idx = state.openDocs.findIndex(d => d.id === id);
   if (idx >= 0) state.openDocs.splice(idx, 1);
+  // Refresh sidebar counts after deletion
+  try { state.documents = await api.listDocs(); renderSidebarDocTypes(); } catch (_) {}
   if (state.activeDocId === id) {
     const next = state.openDocs[idx] || state.openDocs[idx-1];
     if (next) { state.activeDocId = next.id; renderDocTabs(); goDetail(next.id); return; }
@@ -3189,7 +3256,7 @@ function _renderDocumentsList() {
       <span style="color:var(--g300);">|</span>
       <span>추출완료 <b style="color:var(--color-success);">${totalExtracted}</b></span>
       <span style="color:var(--g300);">|</span>
-      <span>활성 유형 <b>${typesWithDocs}</b> / 13</span>
+      <span>활성 유형 <b>${typesWithDocs}</b> / 20</span>
       ${qn || f.status !== 'all' ? `<span style="color:var(--g300);">|</span><span style="color:var(--brand-dark);">검색 결과 <b>${filtered.length}</b>건</span>` : ''}
     </div>
     <div class="docs-filter-controls">
@@ -4898,7 +4965,7 @@ function renderInternalView() {
     },
     {
       title: '내부 코어 뱅킹 시스템',
-      desc: '농협은행 내부 시스템 연동 포인트 (운영 시 필수).',
+      desc: '은행 내부 시스템 연동 포인트 (운영 시 필수).',
       items: [
         { name: '여신 코어 (CBS)', status: 'todo', detail: '한도·심사결과 등록, 여신원장 연계', color: 'neutral' },
         { name: '고객정보 시스템 (KMS)', status: 'todo', detail: '고객 기본정보·신원확인 마스터', color: 'neutral' },

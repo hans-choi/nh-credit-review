@@ -171,7 +171,7 @@ def gen_nice_cb_report(d, out_path, profile="healthy"):
     story.append(Paragraph("Ⅳ. 금융 거래 현황 (타행 포함)", S["h2"]))
     if profile == "healthy":
         rows = [
-            ["일반 대출",  "NH농협은행",   "4.2억원",  "정상"],
+            ["일반 대출",  "신한은행",     "4.2억원",  "정상"],
             ["무역금융",   "KB국민은행",   "2.0억원",  "정상"],
             ["할부금융",   "현대캐피탈",   "0.3억원",  "정상"],
         ]

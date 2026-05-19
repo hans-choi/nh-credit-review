@@ -1,7 +1,7 @@
-"""NH 여신심사 AI 판독 POC — FastAPI backend.
+"""여신심사 AI 판독 POC — FastAPI backend.
 
 Document Parse (Enhanced/ocr=force) + Universal Information Extraction
-for handwritten NH Bank credit-review forms.
+for handwritten credit-review forms used by banks and financial institutions.
 """
 
 import json
@@ -81,8 +81,8 @@ def _render_pdf_pages_to_base64(file_path: str, zoom: float = 2.0) -> dict[str, 
     return out
 
 app = FastAPI(
-    title="NH 여신심사 AI 판독 POC",
-    description="농협은행 여신 심사 서류 자동 판독 (Document Parse Enhanced + Information Extract)",
+    title="여신심사 AI 판독 POC",
+    description="여신 심사 서류 자동 판독 (Document Parse Enhanced + Information Extract)",
     version="0.1.0",
 )
 
@@ -106,7 +106,7 @@ async def root():
     if os.path.exists(idx):
         with open(idx, "r", encoding="utf-8") as f:
             return f.read()
-    return "<h1>NH 여신심사 AI 판독 POC</h1>"
+    return "<h1>여신심사 AI 판독 POC</h1>"
 
 
 @app.get("/api/health")
@@ -900,7 +900,7 @@ async def case_chat(case_id: str, payload: dict):
 
     messages = [
         {"role": "system", "content": (
-            "너는 NH 농협은행 여신 심사관을 보조하는 AI 어시스턴트이다. "
+            "너는 은행 여신 심사관을 보조하는 AI 어시스턴트이다. "
             "주어진 심사 건 컨텍스트를 근거로만 질문에 답한다. 컨텍스트에 없는 내용은 "
             "'해당 정보는 심사 건에 기록되지 않았습니다' 라고 답한다. "
             "답변은 한국어, 2-5문장으로 간결하게, 숫자·근거를 인용한다."
@@ -1009,7 +1009,7 @@ def _build_review_pdf(case: dict, md: str, decision: str, total_score) -> bytes:
         "불승인": "#B84545",
     }
     dec_color = dec_color_map.get(decision, "#374151")
-    story.append(Paragraph("NH 농협은행 · 여신 심사의견서", styles["title"]))
+    story.append(Paragraph("여신 심사의견서", styles["title"]))
     story.append(Paragraph(
         f"심사 건 · {_pdf_escape(case.get('title',''))} &nbsp;·&nbsp; 생성일 "
         f"{datetime.now().strftime('%Y-%m-%d %H:%M')}",

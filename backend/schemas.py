@@ -244,7 +244,7 @@ SCHEMA_MORTGAGE = _wrap("mortgage_contract", {
         "description": (
             "첫 번째 테이블 '채권자겸근저당권자'의 성명 행. "
             "은행명/지점명/지배인 성명 모두 포함. "
-            "예: '농협은행 주식회사 위 지배인 박성덕', '농협은행 주식회사 ○○지점'."
+            "예: '○○은행 주식회사 위 지배인 박성덕', '○○은행 주식회사 ○○지점'."
         ),
     },
     "채권자_주소": {
@@ -482,7 +482,7 @@ SCHEMA_LOAN_AGREEMENT = _wrap("loan_agreement", {
     # ─── [요건4] 제2조 대출금수령·자동이체 계좌 ───
     "대출금수령_은행": {
         "type": "string",
-        "description": "대출금수령 셀의 은행명. 예: '농협은행', '국민은행'.",
+        "description": "대출금수령 셀의 은행명. 예: '○○은행', '국민은행'.",
     },
     "대출금수령_계좌번호": {
         "type": "string",
@@ -499,7 +499,7 @@ SCHEMA_LOAN_AGREEMENT = _wrap("loan_agreement", {
     },
     "자동이체_계좌번호": {
         "type": "string",
-        "description": "자동이체 '농협 계좌번호' 수기 계좌번호.",
+        "description": "자동이체 출금 계좌번호 (수기 기재).",
     },
     "자동이체_예금주": {
         "type": "string",
@@ -744,7 +744,7 @@ SCHEMA_BOARD_RESOLUTION = _wrap("board_resolution", {
         "type": "string",
         "description": (
             "대출을 실행하는 금융기관. 동의어 '차입은행'. "
-            "예: '농협은행 ○○지점', 'NH농협은행 본점'."
+            "예: '○○은행 ○○지점', '시중은행 본점'."
         ),
     },
 
@@ -815,7 +815,7 @@ SCHEMA_BOARD_RESOLUTION = _wrap("board_resolution", {
         "type": "string",
         "description": (
             "해당 이사회의 주된 의안 제목 한 문장. "
-            "예: '패턴디벨롭 주식회사의 농협은행 ○○지점 대출 시 "
+            "예: '패턴디벨롭 주식회사의 ○○은행 ○○지점 대출 시 "
             "동사의 부동산 담보제공 건'."
         ),
     },
@@ -1116,7 +1116,7 @@ SCHEMA_LOCAL_TAX_CERTIFICATE = _wrap("local_tax_certificate", {
 
 # 12. 통장사본
 SCHEMA_BANK_ACCOUNT_COPY = _wrap("bank_account_copy", {
-    "은행명": {"type": "string", "description": "예: '우리은행', 'KB국민은행', 'NH농협은행'."},
+    "은행명": {"type": "string", "description": "예: '우리은행', 'KB국민은행', '하나은행', '○○은행'."},
     "은행_지점": {"type": "string", "description": "발급·개설 지점. 없으면 ''."},
     "계좌번호": {"type": "string", "description": "계좌번호. 하이픈 포함 그대로."},
     "예금주_성명": {"type": "string", "description": "개인 성명 또는 법인 상호."},
@@ -1436,6 +1436,313 @@ SCHEMA_REAL_ESTATE_CONTRACT = _wrap("real_estate_contract", {
 })
 
 
+# ═══════════════════════════════════════════════════════════════
+# 신규: 장려금/소득 추가 증빙 7종 (2026-04 확장)
+# 각 문서는 사진 촬영본 + 손글씨/도장 포함 가능 → DP Enhanced + IE VLM
+# ═══════════════════════════════════════════════════════════════
+
+# 14. 종합소득세 신고서 (개인사업자/프리랜서 종합소득 검증)
+SCHEMA_COMPREHENSIVE_INCOME_TAX = _wrap("comprehensive_income_tax_return", {
+    "귀속연도": {"type": "string", "description": "신고 귀속연도. 예: '2024', '2025'"},
+    "관리번호": {"type": "string", "description": "상단 관리번호 (있으면)"},
+
+    # 1. 기본사항
+    "거주구분": {"type": "string", "description": "거주자/비거주자"},
+    "내외국인": {"type": "string", "description": "내국인/외국인"},
+    "성명": {"type": "string", "description": "신고자 성명"},
+    "주민등록번호": {"type": "string", "description": "주민번호 (마스킹 가능). 예: '940101-1******'"},
+    "주소": {"type": "string", "description": "주소 전체"},
+    "주소지_전화번호": {"type": "string", "description": "주소지 유선 번호"},
+    "휴대전화": {"type": "string", "description": "휴대전화 번호"},
+    "전자우편주소": {"type": "string", "description": "이메일"},
+
+    # 신고 유형
+    "기장의무": {"type": "string", "description": "복식부기의무자 / 간편장부대상자 / 비사업자"},
+    "신고유형": {"type": "string", "description": "자기조정/외부조정/성실신고확인/간편장부/추계-기준율/추계-단순율/분리과세/비사업자 중 체크된 값"},
+    "신고구분": {"type": "string", "description": "정기신고/수정신고/경정청구/기한후신고/추가신고 중 체크된 값"},
+
+    # 2. 환급금 계좌
+    "환급계좌_금융기관": {"type": "string", "description": "환급계좌 은행/금융기관명"},
+    "환급계좌_번호": {"type": "string", "description": "환급계좌 번호"},
+
+    # 3. 세무대리인
+    "세무대리인_성명": {"type": "string", "description": "세무대리인 성명. 없으면 빈 문자열"},
+    "세무대리인_사업자등록번호": {"type": "string", "description": "세무대리인 사업자등록번호"},
+    "세무대리인_전화번호": {"type": "string", "description": "세무대리인 전화번호"},
+    "세무대리인_관리번호": {"type": "string", "description": "관리번호"},
+
+    # 4. 세액의 계산 (핵심 — 종합소득세)
+    "종합소득금액": {"type": "string", "description": "⑲ 종합소득 금액. 예: '15,686,317'"},
+    "소득공제": {"type": "string", "description": "⑳ 소득공제 합계"},
+    "과세표준": {"type": "string", "description": "㉑ 과세표준 (종합소득금액 - 소득공제)"},
+    "세율": {"type": "string", "description": "㉒ 적용 세율 (%)"},
+    "산출세액": {"type": "string", "description": "㉓ 산출세액"},
+    "세액감면": {"type": "string", "description": "㉔ 세액감면"},
+    "세액공제": {"type": "string", "description": "㉕ 세액공제"},
+    "결정세액": {"type": "string", "description": "㉖ 결정세액"},
+    "가산세": {"type": "string", "description": "㉗ 가산세"},
+    "추가납부세액": {"type": "string", "description": "㉘ 추가납부세액 (또는 환급세액)"},
+    "기납부세액": {"type": "string", "description": "㉙ 기납부세액"},
+    "납부할세액": {"type": "string", "description": "㉚ 차감납부할세액. 음수면 환급"},
+
+    # 농어촌특별세 (사이드 컬럼)
+    "농어촌특별세_과세표준": {"type": "string", "description": "농특세 과세표준"},
+    "농어촌특별세_세율": {"type": "string", "description": "농특세 세율"},
+    "농어촌특별세_산출세액": {"type": "string", "description": "농특세 산출세액"},
+    "농어촌특별세_납부할세액": {"type": "string", "description": "농특세 차감납부할세액"},
+
+    # 서명/날인
+    "신고인_서명_날인_유무": {
+        "type": "boolean",
+        "description": "신고인 서명 또는 날인 존재 여부 (true/false)",
+    },
+    "세무대리인_서명_날인_유무": {
+        "type": "boolean",
+        "description": "세무대리인 서명·날인 존재 여부",
+    },
+})
+
+
+# 15. 월별 급여명세서 (당월 지급/공제 상세)
+SCHEMA_PAY_SLIP = _wrap("pay_slip", {
+    "급여_귀속연월": {"type": "string", "description": "급여 귀속 연월. 예: '2025년 01월'"},
+    "성명": {"type": "string", "description": "근로자 성명"},
+    "생년월일": {"type": "string", "description": "생년월일"},
+    "입사일": {"type": "string", "description": "입사일"},
+    "퇴사일": {"type": "string", "description": "퇴사일 (해당시)"},
+    "통상시급": {"type": "string", "description": "통상시급. 예: '13,580'"},
+
+    # 지급항목
+    "기본급": {"type": "string", "description": "기본급 금액"},
+    "급여소급": {"type": "string", "description": "급여소급분"},
+    "연장근로수당": {"type": "string", "description": "연장근로수당"},
+    "야간근로수당": {"type": "string", "description": "야간근로수당"},
+    "휴일근로수당": {"type": "string", "description": "휴일근로수당"},
+    "휴일연장수당": {"type": "string", "description": "휴일연장수당"},
+    "상여금": {"type": "string", "description": "상여금"},
+    "인센티브": {"type": "string", "description": "인센티브"},
+    "연차수당": {"type": "string", "description": "연차수당"},
+    "육아수당": {"type": "string", "description": "육아수당"},
+    "식대": {"type": "string", "description": "식대 (비과세 한도내 분리표시)"},
+    "자가운전보조금": {"type": "string", "description": "자가운전보조금"},
+
+    "지급총액": {"type": "string", "description": "지급항목 합계"},
+
+    # 공제항목
+    "국민연금": {"type": "string", "description": "공제 국민연금"},
+    "고용보험": {"type": "string", "description": "공제 고용보험"},
+    "건강보험": {"type": "string", "description": "공제 건강보험"},
+    "요양보험": {"type": "string", "description": "공제 장기요양보험"},
+    "소득세": {"type": "string", "description": "공제 소득세"},
+    "지방소득세": {"type": "string", "description": "공제 지방소득세"},
+    "고용보험정산": {"type": "string", "description": "고용보험 정산"},
+    "건강보험정산": {"type": "string", "description": "건강보험 정산"},
+    "요양보험정산": {"type": "string", "description": "요양보험 정산"},
+    "소득세연말정산": {"type": "string", "description": "소득세 연말정산"},
+    "지방소득세연말정산": {"type": "string", "description": "지방소득세 연말정산"},
+    "기타공제": {"type": "string", "description": "기타공제"},
+    "공제총액": {"type": "string", "description": "공제항목 합계"},
+
+    "실지급액": {"type": "string", "description": "실지급액 (지급총액 - 공제총액)"},
+
+    # 산출식 (하단 산출 테이블)
+    "산출_기본급_식": {"type": "string", "description": "예: '209H*통상시급'"},
+    "산출_연장근로_식": {"type": "string", "description": "예: '32.5H*통상시급*1.5'"},
+    "산출_야간근로_식": {"type": "string", "description": "예: 'H*통상시급*0.5'"},
+})
+
+
+# 16. 국민연금보험료 납부확인서 (소득 안정성 12개월 트래킹)
+SCHEMA_NATIONAL_PENSION_PAYMENT = _wrap("national_pension_payment_cert", {
+    "발급번호": {"type": "string", "description": "상단 발급번호"},
+    "발급일시": {"type": "string", "description": "발급 일시. 예: '2026.05.11 11:18:30'"},
+    "검증번호": {"type": "string", "description": "검증번호 (있으면)"},
+    "성명": {"type": "string", "description": "가입자 성명"},
+    "생년월일": {"type": "string", "description": "생년월일"},
+    "사업장명": {"type": "string", "description": "사업장명"},
+    "출력기간": {"type": "string", "description": "조회 기간. 예: '2025년01월 ~ 2025년12월'"},
+    "발급용도": {"type": "string", "description": "발급 용도. 예: '제출용'"},
+
+    # 월별 납부내역 (12개월 표)
+    "월별_납부내역": {
+        "type": "array",
+        "description": "월별 고지/납부 금액 행. 12행이 일반적",
+        "items": {
+            "type": "object",
+            "properties": {
+                "월": {"type": "string", "description": "예: '2025년01월'"},
+                "고지금액": {"type": "string", "description": "고지된 보험료. 예: '138,680'"},
+                "납부금액": {"type": "string", "description": "실제 납부금액"},
+            },
+        },
+    },
+
+    "합계_고지금액": {"type": "string", "description": "총 고지금액"},
+    "합계_납부금액": {"type": "string", "description": "총 납부금액"},
+
+    "공단_직인_유무": {
+        "type": "boolean",
+        "description": "국민연금공단 직인/마크 존재 여부",
+    },
+})
+
+
+# 17. 고용보험 근로자 부과내역 (실급여 vs 신고급여 검증)
+SCHEMA_EMPLOYMENT_INSURANCE_ASSESSMENT = _wrap("employment_insurance_worker_assessment", {
+    "보험년도": {"type": "string", "description": "보험년도. 예: '2025년도'"},
+    "출력일": {"type": "string", "description": "출력일"},
+    "성명": {"type": "string", "description": "근로자 성명"},
+    "생년월일": {"type": "string", "description": "생년월일"},
+    "근로자구분": {"type": "string", "description": "일반근로자 / 일용근로자 / 고용형태"},
+    "고용일": {"type": "string", "description": "고용일"},
+    "고용종료일": {"type": "string", "description": "고용 종료일 (있으면)"},
+    "전보일": {"type": "string", "description": "전보일 (있으면)"},
+
+    "사업장_관리번호": {"type": "string", "description": "사업장 관리번호"},
+    "사업장명": {"type": "string", "description": "사업장명"},
+    "사업장주소": {"type": "string", "description": "사업장 주소"},
+    "대표자명": {"type": "string", "description": "대표자명"},
+
+    # 보험요율
+    "보험요율_실업급여": {"type": "string", "description": "실업급여 보험요율 (%). 예: '1.8'"},
+    "보험요율_고안직능": {"type": "string", "description": "고용안정·직능개발 보험요율 (%). 예: '0.25'"},
+
+    # 월별 부과 내역
+    "월별_부과내역": {
+        "type": "array",
+        "description": "월별 부과 행 (월/산정보수/근무일수/근로자보험료/사업주보험료 등)",
+        "items": {
+            "type": "object",
+            "properties": {
+                "월": {"type": "string", "description": "예: '2025-01'"},
+                "실업급여_산정보수": {"type": "string", "description": "실업급여 산정 보수 (원)"},
+                "고안직능_산정보수": {"type": "string", "description": "고안직능 산정 보수"},
+                "월평균보수": {"type": "string", "description": "월평균보수"},
+                "근무일수": {"type": "string", "description": "근무일수"},
+                "근로자_실업급여보험료": {"type": "string", "description": "근로자 부담 실업급여 보험료"},
+                "사업주_실업급여보험료": {"type": "string", "description": "사업주 부담 실업급여 보험료"},
+                "사업주_고안직능보험료": {"type": "string", "description": "사업주 부담 고안직능 보험료"},
+                "사업주_합계": {"type": "string", "description": "사업주 합계"},
+            },
+        },
+    },
+
+    "총_근로자보험료": {"type": "string", "description": "근로자 부담 총액"},
+    "총_사업주보험료": {"type": "string", "description": "사업주 부담 총액"},
+
+    "공단_직인_유무": {
+        "type": "boolean",
+        "description": "근로복지공단 직인/마크 존재 여부",
+    },
+})
+
+
+# 18. 계좌 거래내역 (자금 흐름·체급여 입금 확인)
+SCHEMA_BANK_TRANSACTION_HISTORY = _wrap("bank_transaction_history", {
+    "은행명": {"type": "string", "description": "은행 또는 금융기관명. 예: 'IBK기업은행', '국민은행'"},
+    "상품명": {"type": "string", "description": "상품명. 예: '나라사랑통장', '보통예금'"},
+    "계좌번호": {"type": "string", "description": "계좌번호 (마스킹 가능)"},
+    "예금주": {"type": "string", "description": "예금주 성명"},
+
+    "조회_시작일": {"type": "string", "description": "조회 기간 시작일. 예: '2025.05.05'"},
+    "조회_종료일": {"type": "string", "description": "조회 기간 종료일. 예: '2026.05.04'"},
+    "조회_필터": {"type": "string", "description": "예: '12개월 · 입금 · 최신순', '검색어: 춘포면'"},
+
+    # 거래 내역
+    "거래내역": {
+        "type": "array",
+        "description": "거래 행 목록. 거래일시·적요·금액·잔액",
+        "items": {
+            "type": "object",
+            "properties": {
+                "거래일시": {"type": "string", "description": "거래일시. 예: '2025.12.31 15:28'"},
+                "적요": {"type": "string", "description": "적요/메모. 예: '춘포면', '월급', '이체'"},
+                "입금액": {"type": "string", "description": "입금액 (원). 없으면 빈 문자열"},
+                "출금액": {"type": "string", "description": "출금액 (원). 없으면 빈 문자열"},
+                "거래후_잔액": {"type": "string", "description": "거래 후 잔액"},
+                "거래구분": {"type": "string", "description": "이체/입금/출금/ATM 등"},
+            },
+        },
+    },
+
+    "총_입금건수": {"type": "string", "description": "총 입금 건수 (페이지 합계가 있으면)"},
+    "총_입금액": {"type": "string", "description": "총 입금액 합계"},
+})
+
+
+# 19. 근로/사업소득 지급확인서 (세무서장 제출용 월별 분해)
+SCHEMA_INCOME_PAYMENT_CERT = _wrap("income_payment_cert", {
+    "소득구분": {"type": "string", "description": "근로소득 / 사업소득 중 체크된 값"},
+    "성명": {"type": "string", "description": "수령인 성명"},
+    "주민등록번호": {"type": "string", "description": "주민번호 (마스킹 가능)"},
+    "주소": {"type": "string", "description": "주소 전체"},
+    "전화번호": {"type": "string", "description": "전화번호"},
+
+    # 지급자 (회사/사업자)
+    "지급자_상호": {"type": "string", "description": "지급자 상호"},
+    "지급자_사업자등록번호": {"type": "string", "description": "지급자 사업자등록번호"},
+    "지급자_사업장소재지": {"type": "string", "description": "지급자 사업장 소재지"},
+    "지급자_대표자": {"type": "string", "description": "지급자 대표자 성명"},
+    "귀속연도": {"type": "string", "description": "귀속 연도. 예: '2025'"},
+
+    # 월별 지급내역
+    "월별_지급내역": {
+        "type": "array",
+        "description": "월별 지급 행. 지급월·총지급액·과세소득·비과세소득",
+        "items": {
+            "type": "object",
+            "properties": {
+                "지급월": {"type": "string", "description": "예: '2025년 3월'"},
+                "총지급액": {"type": "string", "description": "총지급액 (① + ②)"},
+                "과세소득": {"type": "string", "description": "① 과세소득"},
+                "비과세소득": {"type": "string", "description": "② 비과세소득"},
+            },
+        },
+    },
+    "합계_총지급액": {"type": "string", "description": "총지급액 합계"},
+
+    "세무서장_제출처": {"type": "string", "description": "제출하는 세무서명. 예: '소매업양약세무서장'"},
+    "지급자_직인_유무": {
+        "type": "boolean",
+        "description": "지급자(법인/사업자) 직인 또는 서명 존재 여부",
+    },
+})
+
+
+# 20. 급여내역증명서 (회사 직접 발급 약식 연간 증명)
+SCHEMA_SALARY_HISTORY_CERT = _wrap("salary_history_cert", {
+    "성명": {"type": "string", "description": "수령인 성명"},
+    "생년월일": {"type": "string", "description": "생년월일. 예: '1985년 6월 5일'"},
+    "주소": {"type": "string", "description": "주소 전체"},
+    "직책": {"type": "string", "description": "직책. 예: '목사', '대리', '과장'"},
+
+    # 지급내역
+    "지급기간": {"type": "string", "description": "예: '2025년 1월 ~ 2025년 12월'"},
+    "지급금액": {"type": "string", "description": "기간 합계 지급금액. 예: '25,800,000'"},
+    "비고": {"type": "string", "description": "비고. 예: '지급'"},
+
+    "지급내역_상세": {
+        "type": "array",
+        "description": "월별 또는 기간별 지급 행 (행이 여러 개인 경우)",
+        "items": {
+            "type": "object",
+            "properties": {
+                "년도_월": {"type": "string", "description": "예: '2025년 1월'"},
+                "금액": {"type": "string", "description": "금액"},
+                "비고": {"type": "string", "description": "비고"},
+            },
+        },
+    },
+
+    "발급일": {"type": "string", "description": "발급일. 예: '2026. 12. 5.'"},
+    "발급기관명": {"type": "string", "description": "발급 회사/기관명. 예: '예수교대한성결교회 창신교회'"},
+    "발급기관_직인_유무": {
+        "type": "boolean",
+        "description": "발급 기관 직인 또는 서명 존재 여부",
+    },
+})
+
+
 DOC_TYPES = {
     # ─── 신규: 부동산 매매·임대차 계약서 (최상단 노출) ───
     "real_estate_contract": {
@@ -1562,6 +1869,71 @@ DOC_TYPES = {
         "icon": "💳",
         "color": "#5EA889",
         "schema": SCHEMA_BANK_ACCOUNT_COPY,
+    },
+
+    # ─── 신규 확장: 장려금/소득 추가 증빙 7종 (2026-04) ───
+    "comprehensive_income_tax_return": {
+        "key": "comprehensive_income_tax_return",
+        "label": "종합소득세 신고서",
+        "label_short": "종합소득세 신고서",
+        "category": "세무 증빙",
+        "icon": "🧮",
+        "color": "#A48656",
+        "schema": SCHEMA_COMPREHENSIVE_INCOME_TAX,
+    },
+    "pay_slip": {
+        "key": "pay_slip",
+        "label": "월별 급여명세서",
+        "label_short": "급여명세서",
+        "category": "개인여신·소득증빙",
+        "icon": "💸",
+        "color": "#6A8FB8",
+        "schema": SCHEMA_PAY_SLIP,
+    },
+    "national_pension_payment_cert": {
+        "key": "national_pension_payment_cert",
+        "label": "국민연금 납부확인서",
+        "label_short": "국민연금 납부",
+        "category": "개인여신·소득증빙",
+        "icon": "🪪",
+        "color": "#7A8FAB",
+        "schema": SCHEMA_NATIONAL_PENSION_PAYMENT,
+    },
+    "employment_insurance_worker_assessment": {
+        "key": "employment_insurance_worker_assessment",
+        "label": "고용보험 근로자 부과내역",
+        "label_short": "고용보험 부과",
+        "category": "개인여신·소득증빙",
+        "icon": "🛡️",
+        "color": "#7E9D8C",
+        "schema": SCHEMA_EMPLOYMENT_INSURANCE_ASSESSMENT,
+    },
+    "bank_transaction_history": {
+        "key": "bank_transaction_history",
+        "label": "계좌 거래내역",
+        "label_short": "계좌 거래내역",
+        "category": "계좌 검증",
+        "icon": "🧾",
+        "color": "#4E967A",
+        "schema": SCHEMA_BANK_TRANSACTION_HISTORY,
+    },
+    "income_payment_cert": {
+        "key": "income_payment_cert",
+        "label": "근로/사업소득 지급확인서",
+        "label_short": "소득 지급확인서",
+        "category": "개인여신·소득증빙",
+        "icon": "📋",
+        "color": "#8E7CB5",
+        "schema": SCHEMA_INCOME_PAYMENT_CERT,
+    },
+    "salary_history_cert": {
+        "key": "salary_history_cert",
+        "label": "급여내역증명서",
+        "label_short": "급여증명서",
+        "category": "개인여신·소득증빙",
+        "icon": "📜",
+        "color": "#A07FB0",
+        "schema": SCHEMA_SALARY_HISTORY_CERT,
     },
 }
 

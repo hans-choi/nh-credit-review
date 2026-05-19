@@ -346,7 +346,7 @@ def gen_credit_agreement(d, out_path):
                             leftMargin=20*mm, rightMargin=20*mm,
                             topMargin=18*mm, bottomMargin=18*mm)
     story = _header("여 신 거 래 약 정 서", "( Ⅰ형 · 기업용 )")
-    story.append(Paragraph("농협은행 주식회사 앞", S["body"]))
+    story.append(Paragraph("○○은행 주식회사 앞", S["body"]))
     story.append(Spacer(1, 4*mm))
     story.append(kv_table([
         ["접 수 번 호", "2025-0501-" + d["사업자번호"].replace("-", "")[:6]],
@@ -401,7 +401,7 @@ def gen_board_resolution(d, out_path):
     story.append(Spacer(1, 5*mm))
     story.append(Paragraph("[의 안]", S["h2"]))
     story.append(Paragraph(
-        f"{d['상호']}의 농협은행 ○○지점으로부터의 <b>{d['여신_종류']}</b> 신규 여신 및 "
+        f"{d['상호']}의 ○○은행 ○○지점으로부터의 <b>{d['여신_종류']}</b> 신규 여신 및 "
         f"이에 따른 담보제공의 건", S["body"]))
     story.append(Spacer(1, 3*mm))
     story.append(Paragraph("[의안 세부사항]", S["h2"]))

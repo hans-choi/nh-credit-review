@@ -9668,5 +9668,3095 @@
     "total_tokens": 12311,
     "doc_id": "a36a6285bc",
     "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-04-26T01:30:32.448738",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:30:38.355833",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:30:43.872497",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:30:49.637444",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:30:55.340864",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:30:59.622092",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:03.039752",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:08.314065",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:14.110414",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:15.766721",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:19.582344",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:20.984196",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:22.352837",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:27.638245",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:29.074648",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:30.558696",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:32.761060",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:34.232421",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:35.621988",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:37.600996",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:41.586289",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:42.990978",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:45.263832",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:50.748834",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12518,
+    "completion_tokens": 634,
+    "total_tokens": 13152,
+    "doc_id": "4ad5a50391",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:50.994807",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:52.582190",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:54.840140",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7598,
+    "completion_tokens": 966,
+    "total_tokens": 8564,
+    "doc_id": "773691a731",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-04-26T01:31:58.865434",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:01.394209",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5496,
+    "completion_tokens": 211,
+    "total_tokens": 5707,
+    "doc_id": "3a994c9b88",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:01.613427",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6976,
+    "completion_tokens": 251,
+    "total_tokens": 7227,
+    "doc_id": "8c24580f22",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:04.179680",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 14000,
+    "completion_tokens": 632,
+    "total_tokens": 14632,
+    "doc_id": "846427d06f",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:08.191108",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7341,
+    "completion_tokens": 222,
+    "total_tokens": 7563,
+    "doc_id": "98afb61818",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:08.761912",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7145,
+    "completion_tokens": 229,
+    "total_tokens": 7374,
+    "doc_id": "e28d1a32bc",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:12.142170",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:14.601028",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7316,
+    "completion_tokens": 241,
+    "total_tokens": 7557,
+    "doc_id": "aa4071a7c1",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:15.012063",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7448,
+    "completion_tokens": 197,
+    "total_tokens": 7645,
+    "doc_id": "b334ed6fd9",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:15.539724",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12718,
+    "completion_tokens": 673,
+    "total_tokens": 13391,
+    "doc_id": "bac951300e",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:22.483526",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7228,
+    "completion_tokens": 264,
+    "total_tokens": 7492,
+    "doc_id": "5e7ed73af3",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:23.789257",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7246,
+    "completion_tokens": 179,
+    "total_tokens": 7425,
+    "doc_id": "82fd10ae0f",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:24.944041",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21069,
+    "completion_tokens": 880,
+    "total_tokens": 21949,
+    "doc_id": "ce858175fd",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:27.444756",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 13328,
+    "completion_tokens": 604,
+    "total_tokens": 13932,
+    "doc_id": "6fa3830bed",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:32.599025",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7453,
+    "completion_tokens": 198,
+    "total_tokens": 7651,
+    "doc_id": "cf361b6305",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:36.397817",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 19944,
+    "completion_tokens": 866,
+    "total_tokens": 20810,
+    "doc_id": "86a500c4d9",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:38.611793",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12906,
+    "completion_tokens": 646,
+    "total_tokens": 13552,
+    "doc_id": "c3ffcf3831",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:47.782919",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21036,
+    "completion_tokens": 879,
+    "total_tokens": 21915,
+    "doc_id": "c0cd1104b4",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-04-26T01:32:58.522416",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21063,
+    "completion_tokens": 868,
+    "total_tokens": 21931,
+    "doc_id": "51baa13c8e",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:15.326060",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 37593,
+    "completion_tokens": 873,
+    "total_tokens": 38466,
+    "doc_id": "69f14dc739",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:28.053976",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:35.033831",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:40.687826",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:42.219101",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:46.310538",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:49.378365",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:50.995068",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:52.501673",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4557,
+    "completion_tokens": 330,
+    "total_tokens": 4887,
+    "doc_id": "09f02a2a64",
+    "detail": "extract retirement_income_tax"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:54.121155",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:57.330411",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:33:59.355560",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5316,
+    "completion_tokens": 204,
+    "total_tokens": 5520,
+    "doc_id": "6224497974",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:00.941461",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:02.615934",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6591,
+    "completion_tokens": 314,
+    "total_tokens": 6905,
+    "doc_id": "6fd9e89901",
+    "detail": "extract retirement_income_tax"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:06.234979",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2158,
+    "completion_tokens": 119,
+    "total_tokens": 2277,
+    "doc_id": "8a0182fbbf",
+    "detail": "extract bank_account_copy"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:07.650594",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4926,
+    "completion_tokens": 207,
+    "total_tokens": 5133,
+    "doc_id": "cd62b639d9",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:10.287343",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2151,
+    "completion_tokens": 127,
+    "total_tokens": 2278,
+    "doc_id": "1cfa431b65",
+    "detail": "extract bank_account_copy"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:11.665137",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 9,
+    "doc_id": "",
+    "detail": "9 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:13.483312",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5471,
+    "completion_tokens": 356,
+    "total_tokens": 5827,
+    "doc_id": "b0beae8e50",
+    "detail": "extract retirement_income_tax"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:15.057969",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2421,
+    "completion_tokens": 109,
+    "total_tokens": 2530,
+    "doc_id": "9d68e872fd",
+    "detail": "extract bank_account_copy"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:16.179791",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5104,
+    "completion_tokens": 221,
+    "total_tokens": 5325,
+    "doc_id": "81be0d5d31",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:17.475281",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 7,
+    "doc_id": "",
+    "detail": "7 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:23.187397",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 6,
+    "doc_id": "",
+    "detail": "6 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:29.691923",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:33.376253",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:34.908720",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21462,
+    "completion_tokens": 820,
+    "total_tokens": 22282,
+    "doc_id": "7363db69ec",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:36.917697",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:41.389054",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:45.742643",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16710,
+    "completion_tokens": 647,
+    "total_tokens": 17357,
+    "doc_id": "dea8467c61",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:46.154153",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:52.200121",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2133,
+    "completion_tokens": 166,
+    "total_tokens": 2299,
+    "doc_id": "e31327e848",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:55.343959",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 14950,
+    "completion_tokens": 559,
+    "total_tokens": 15509,
+    "doc_id": "37d7397ddf",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-04-26T01:34:57.468909",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2438,
+    "completion_tokens": 257,
+    "total_tokens": 2695,
+    "doc_id": "aa0dd84005",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-04-26T01:35:01.566931",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2657,
+    "completion_tokens": 269,
+    "total_tokens": 2926,
+    "doc_id": "14d5b94662",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-04-26T01:35:06.076946",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2805,
+    "completion_tokens": 252,
+    "total_tokens": 3057,
+    "doc_id": "8ba2f0340e",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-04-26T01:35:11.524960",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2310,
+    "completion_tokens": 215,
+    "total_tokens": 2525,
+    "doc_id": "10adb30a48",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-04-26T01:35:12.981499",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 6,
+    "doc_id": "",
+    "detail": "6 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:35:39.545275",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 22195,
+    "completion_tokens": 2874,
+    "total_tokens": 25069,
+    "doc_id": "8c05e271c0",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-04-26T01:36:04.853305",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 10,
+    "doc_id": "",
+    "detail": "10 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:36:20.790255",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 35245,
+    "completion_tokens": 1063,
+    "total_tokens": 36308,
+    "doc_id": "22cd61e019",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-04-26T01:36:45.082716",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:37:01.574190",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 9350,
+    "completion_tokens": 1848,
+    "total_tokens": 11198,
+    "doc_id": "f9d2148bf9",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-04-26T01:39:09.685539",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:39:19.072753",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16074,
+    "completion_tokens": 1321,
+    "total_tokens": 17395,
+    "doc_id": "ded500a130",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-04-26T01:39:47.532085",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-26T01:39:53.455923",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7453,
+    "completion_tokens": 198,
+    "total_tokens": 7651,
+    "doc_id": "c52e674976",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-04-30T17:22:29.343224",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-04-30T17:22:37.560953",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2435,
+    "completion_tokens": 267,
+    "total_tokens": 2702,
+    "doc_id": "cb013fd26d",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-04-30T17:22:42.544459",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2435,
+    "completion_tokens": 282,
+    "total_tokens": 2717,
+    "doc_id": "cb013fd26d",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-05-07T15:38:13.880203",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 15424,
+    "completion_tokens": 682,
+    "total_tokens": 16106,
+    "doc_id": "719502a254",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-07T15:38:28.886562",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16186,
+    "completion_tokens": 1317,
+    "total_tokens": 17503,
+    "doc_id": "7a07888b69",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:12.510007",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:15.379353",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:17.817641",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:20.076441",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:23.680692",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:29.990725",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:33.282918",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:39.040263",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:46.627164",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-14T14:15:57.441087",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16418,
+    "completion_tokens": 722,
+    "total_tokens": 17140,
+    "doc_id": "3563ff0f75",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:16:04.958678",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 14738,
+    "completion_tokens": 997,
+    "total_tokens": 15735,
+    "doc_id": "1633eadcf4",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:16:10.660839",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 13628,
+    "completion_tokens": 681,
+    "total_tokens": 14309,
+    "doc_id": "43e687f6c7",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:16:20.631058",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 13718,
+    "completion_tokens": 683,
+    "total_tokens": 14401,
+    "doc_id": "85d7158ade",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:16:33.714412",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16046,
+    "completion_tokens": 1324,
+    "total_tokens": 17370,
+    "doc_id": "313b5fcabf",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:16:47.696197",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 15092,
+    "completion_tokens": 998,
+    "total_tokens": 16090,
+    "doc_id": "34916ed78d",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:16:57.090347",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 15908,
+    "completion_tokens": 739,
+    "total_tokens": 16647,
+    "doc_id": "4b080559fb",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:17:05.997616",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 15418,
+    "completion_tokens": 792,
+    "total_tokens": 16210,
+    "doc_id": "37b075e0b8",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-14T14:17:13.397493",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 15220,
+    "completion_tokens": 996,
+    "total_tokens": 16216,
+    "doc_id": "56efca2cbc",
+    "detail": "extract real_estate_contract"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:28.915003",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:33.389927",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:37.374019",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:42.576683",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:47.811804",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:49.394595",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:54.457333",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:58.125415",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12518,
+    "completion_tokens": 637,
+    "total_tokens": 13155,
+    "doc_id": "02ef132d17",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-05-15T01:07:59.061115",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:02.378751",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:03.283196",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:06.978634",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:08.865369",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:12.843673",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12900,
+    "completion_tokens": 613,
+    "total_tokens": 13513,
+    "doc_id": "7a2d971d3e",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:13.494223",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:14.694102",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:16.957290",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6859,
+    "completion_tokens": 251,
+    "total_tokens": 7110,
+    "doc_id": "5b48d19ffa",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:20.526250",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:20.619992",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 13328,
+    "completion_tokens": 602,
+    "total_tokens": 13930,
+    "doc_id": "2720b71dc8",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:21.029275",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:24.573857",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:25.571742",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7316,
+    "completion_tokens": 241,
+    "total_tokens": 7557,
+    "doc_id": "d2e0d6404a",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:27.369814",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:32.735718",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7444,
+    "completion_tokens": 198,
+    "total_tokens": 7642,
+    "doc_id": "c51c53bdb1",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:33.230718",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12718,
+    "completion_tokens": 677,
+    "total_tokens": 13395,
+    "doc_id": "fb7a160805",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:33.703083",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:35.852828",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7514,
+    "completion_tokens": 250,
+    "total_tokens": 7764,
+    "doc_id": "5487776859",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:40.172964",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:41.540190",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7246,
+    "completion_tokens": 171,
+    "total_tokens": 7417,
+    "doc_id": "7bba7a9601",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:42.035288",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6607,
+    "completion_tokens": 231,
+    "total_tokens": 6838,
+    "doc_id": "b5737e4238",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:42.967510",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 14000,
+    "completion_tokens": 627,
+    "total_tokens": 14627,
+    "doc_id": "b1e2492d2d",
+    "detail": "extract payroll"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:47.340697",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:50.128121",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7432,
+    "completion_tokens": 171,
+    "total_tokens": 7603,
+    "doc_id": "fb5d6491dd",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:51.476209",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:51.743369",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7598,
+    "completion_tokens": 964,
+    "total_tokens": 8562,
+    "doc_id": "e0163ed7b4",
+    "detail": "extract income_cert"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:52.837034",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:53.764129",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:54.620997",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 37593,
+    "completion_tokens": 859,
+    "total_tokens": 38452,
+    "doc_id": "ecb6888315",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:55.301341",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:57.565578",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:59.348297",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7327,
+    "completion_tokens": 220,
+    "total_tokens": 7547,
+    "doc_id": "049b1150af",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-05-15T01:08:59.864355",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:01.283065",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:04.850523",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6694,
+    "completion_tokens": 376,
+    "total_tokens": 7070,
+    "doc_id": "ca1f57f2b4",
+    "detail": "extract board_resolution"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:05.810390",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21063,
+    "completion_tokens": 868,
+    "total_tokens": 21931,
+    "doc_id": "b90b51c6e8",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:06.167277",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5496,
+    "completion_tokens": 211,
+    "total_tokens": 5707,
+    "doc_id": "ca4d17bed5",
+    "detail": "extract mortgage"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:08.083999",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 6,
+    "doc_id": "",
+    "detail": "6 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:09.761090",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:10.145197",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6862,
+    "completion_tokens": 409,
+    "total_tokens": 7271,
+    "doc_id": "0eaf84bf11",
+    "detail": "extract board_resolution"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:12.723402",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:13.183107",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:15.794372",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21036,
+    "completion_tokens": 877,
+    "total_tokens": 21913,
+    "doc_id": "a30e9f5868",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:15.817116",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6611,
+    "completion_tokens": 328,
+    "total_tokens": 6939,
+    "doc_id": "41a463cc65",
+    "detail": "extract board_resolution"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:17.596328",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 5,
+    "doc_id": "",
+    "detail": "5 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:18.143257",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:20.587984",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:21.165830",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6704,
+    "completion_tokens": 373,
+    "total_tokens": 7077,
+    "doc_id": "172dc103e3",
+    "detail": "extract board_resolution"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:21.477075",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:23.314122",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:24.445832",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 20904,
+    "completion_tokens": 991,
+    "total_tokens": 21895,
+    "doc_id": "2c7426f700",
+    "detail": "extract credit_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:24.918962",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:25.770129",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 20298,
+    "completion_tokens": 869,
+    "total_tokens": 21167,
+    "doc_id": "04797a37fa",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:26.559165",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:27.544315",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6963,
+    "completion_tokens": 432,
+    "total_tokens": 7395,
+    "doc_id": "99150233f3",
+    "detail": "extract board_resolution"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:27.937559",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:35.262798",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2657,
+    "completion_tokens": 269,
+    "total_tokens": 2926,
+    "doc_id": "ce79eb5e07",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:36.214486",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21069,
+    "completion_tokens": 880,
+    "total_tokens": 21949,
+    "doc_id": "8bc131cdcd",
+    "detail": "extract loan_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:36.519955",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 18222,
+    "completion_tokens": 1086,
+    "total_tokens": 19308,
+    "doc_id": "84801a2020",
+    "detail": "extract credit_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:40.960594",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2505,
+    "completion_tokens": 217,
+    "total_tokens": 2722,
+    "doc_id": "78e1e5d06f",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:43.792080",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21354,
+    "completion_tokens": 1081,
+    "total_tokens": 22435,
+    "doc_id": "03599c7116",
+    "detail": "extract credit_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:44.864232",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 11,
+    "doc_id": "",
+    "detail": "11 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:45.513699",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2842,
+    "completion_tokens": 252,
+    "total_tokens": 3094,
+    "doc_id": "ca39b479b2",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:49.737032",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 9,
+    "doc_id": "",
+    "detail": "9 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:51.802245",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 21720,
+    "completion_tokens": 1084,
+    "total_tokens": 22804,
+    "doc_id": "3876cf2af0",
+    "detail": "extract credit_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:51.937122",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2438,
+    "completion_tokens": 263,
+    "total_tokens": 2701,
+    "doc_id": "53a3344fd5",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:53.401688",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:55.796437",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2133,
+    "completion_tokens": 166,
+    "total_tokens": 2299,
+    "doc_id": "1ce1d1a6a4",
+    "detail": "extract business_registration"
+  },
+  {
+    "timestamp": "2026-05-15T01:09:57.410662",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 6,
+    "doc_id": "",
+    "detail": "6 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:00.412683",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:02.839257",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 18024,
+    "completion_tokens": 1011,
+    "total_tokens": 19035,
+    "doc_id": "babb19ac28",
+    "detail": "extract credit_agreement"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:03.618759",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:06.817755",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 6,
+    "doc_id": "",
+    "detail": "6 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:07.816996",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:12.769635",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:15.815133",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:19.354949",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:19.829180",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:22.260151",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:24.085708",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:26.857072",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:30.958763",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:34.545559",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4572,
+    "completion_tokens": 319,
+    "total_tokens": 4891,
+    "doc_id": "2219f8af40",
+    "detail": "extract retirement_income_tax"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:34.783435",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:39.293703",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:40.143030",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:42.998883",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:45.690867",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:46.170687",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6461,
+    "completion_tokens": 311,
+    "total_tokens": 6772,
+    "doc_id": "a37bd92335",
+    "detail": "extract retirement_income_tax"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:48.325488",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:54.548691",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2356,
+    "completion_tokens": 115,
+    "total_tokens": 2471,
+    "doc_id": "9c3442fe0c",
+    "detail": "extract bank_account_copy"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:59.396128",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2421,
+    "completion_tokens": 109,
+    "total_tokens": 2530,
+    "doc_id": "13acbeb76f",
+    "detail": "extract bank_account_copy"
+  },
+  {
+    "timestamp": "2026-05-15T01:10:59.770834",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5471,
+    "completion_tokens": 357,
+    "total_tokens": 5828,
+    "doc_id": "5fee1ab913",
+    "detail": "extract retirement_income_tax"
+  },
+  {
+    "timestamp": "2026-05-15T01:11:04.503397",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2151,
+    "completion_tokens": 119,
+    "total_tokens": 2270,
+    "doc_id": "19d09976a5",
+    "detail": "extract bank_account_copy"
+  },
+  {
+    "timestamp": "2026-05-15T01:11:07.119489",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 3786,
+    "completion_tokens": 234,
+    "total_tokens": 4020,
+    "doc_id": "07b4918dc0",
+    "detail": "extract retirement_income_tax"
+  },
+  {
+    "timestamp": "2026-05-15T01:11:18.856943",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 2158,
+    "completion_tokens": 119,
+    "total_tokens": 2277,
+    "doc_id": "5973cce8b7",
+    "detail": "extract bank_account_copy"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:15.130619",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 7,
+    "doc_id": "",
+    "detail": "7 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:21.322430",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 8,
+    "doc_id": "",
+    "detail": "8 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:25.315458",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:28.598518",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:33.203601",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:37.781622",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:40.483191",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:43.497376",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:44.589425",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 11,
+    "doc_id": "",
+    "detail": "11 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:46.059474",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 9,
+    "doc_id": "",
+    "detail": "9 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:47.214312",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:48.279592",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 6,
+    "doc_id": "",
+    "detail": "6 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:49.409912",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:50.616090",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 6,
+    "doc_id": "",
+    "detail": "6 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:12:55.385613",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 7,
+    "doc_id": "",
+    "detail": "7 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:05.782262",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:06.458152",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:07.121767",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:07.852803",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:08.378473",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 24388,
+    "completion_tokens": 746,
+    "total_tokens": 25134,
+    "doc_id": "264cf86f29",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:08.635534",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:09.335954",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:13.781077",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:18.014044",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:19.138389",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 20478,
+    "completion_tokens": 742,
+    "total_tokens": 21220,
+    "doc_id": "381f33a8fb",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:26.923745",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8994,
+    "completion_tokens": 760,
+    "total_tokens": 9754,
+    "doc_id": "c5f2095059",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:27.557809",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5226,
+    "completion_tokens": 181,
+    "total_tokens": 5407,
+    "doc_id": "655adab03b",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:34.855313",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5384,
+    "completion_tokens": 249,
+    "total_tokens": 5633,
+    "doc_id": "c086691b2b",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:36.752384",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12962,
+    "completion_tokens": 868,
+    "total_tokens": 13830,
+    "doc_id": "602060ad4b",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:43.319213",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5060,
+    "completion_tokens": 205,
+    "total_tokens": 5265,
+    "doc_id": "0d6c522613",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:45.149077",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 9322,
+    "completion_tokens": 640,
+    "total_tokens": 9962,
+    "doc_id": "3922b3d3d7",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:52.292923",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4978,
+    "completion_tokens": 200,
+    "total_tokens": 5178,
+    "doc_id": "9eac7c8923",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:13:57.131797",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 14950,
+    "completion_tokens": 673,
+    "total_tokens": 15623,
+    "doc_id": "294a428bee",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-05-15T01:14:01.002019",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5326,
+    "completion_tokens": 266,
+    "total_tokens": 5592,
+    "doc_id": "284e25f6dc",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:14:08.461173",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16710,
+    "completion_tokens": 631,
+    "total_tokens": 17341,
+    "doc_id": "5670e2d008",
+    "detail": "extract real_estate_title"
+  },
+  {
+    "timestamp": "2026-05-15T01:14:09.520472",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5606,
+    "completion_tokens": 222,
+    "total_tokens": 5828,
+    "doc_id": "4f32986b2d",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:14:16.688399",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5336,
+    "completion_tokens": 221,
+    "total_tokens": 5557,
+    "doc_id": "8017b6f0dd",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:14:24.020380",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5316,
+    "completion_tokens": 248,
+    "total_tokens": 5564,
+    "doc_id": "ea667dc0a2",
+    "detail": "extract local_tax_certificate"
+  },
+  {
+    "timestamp": "2026-05-15T01:15:07.078607",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:15:08.160861",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:15:09.240351",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 4,
+    "doc_id": "",
+    "detail": "4 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:15:10.384887",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:15:11.322398",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 2,
+    "doc_id": "",
+    "detail": "2 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-15T01:15:40.940112",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 10144,
+    "completion_tokens": 2173,
+    "total_tokens": 12317,
+    "doc_id": "5f447b049b",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-05-15T01:16:10.662290",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 10222,
+    "completion_tokens": 2032,
+    "total_tokens": 12254,
+    "doc_id": "ce9e522ca6",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-05-15T01:16:34.102783",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 10222,
+    "completion_tokens": 2113,
+    "total_tokens": 12335,
+    "doc_id": "ce9e522ca6",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-05-15T01:16:53.908020",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16301,
+    "completion_tokens": 2829,
+    "total_tokens": 19130,
+    "doc_id": "ef7adfdf8c",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-05-15T01:17:11.905938",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 6744,
+    "completion_tokens": 1001,
+    "total_tokens": 7745,
+    "doc_id": "89b6262d2a",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-05-15T01:17:22.083953",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 16301,
+    "completion_tokens": 2673,
+    "total_tokens": 18974,
+    "doc_id": "ef7adfdf8c",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-05-15T01:17:23.272715",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8704,
+    "completion_tokens": 484,
+    "total_tokens": 9188,
+    "doc_id": "4762c2d783",
+    "detail": "extract financial_statement"
+  },
+  {
+    "timestamp": "2026-05-20T00:40:46.109422",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:40:57.995648",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8860,
+    "completion_tokens": 463,
+    "total_tokens": 9323,
+    "doc_id": "285bb27c03",
+    "detail": "extract comprehensive_income_tax_return"
+  },
+  {
+    "timestamp": "2026-05-20T00:41:01.885131",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:41:10.444889",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5559,
+    "completion_tokens": 310,
+    "total_tokens": 5869,
+    "doc_id": "ab8a35753b",
+    "detail": "extract pay_slip"
+  },
+  {
+    "timestamp": "2026-05-20T00:41:15.890778",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:41:31.861380",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 3914,
+    "completion_tokens": 526,
+    "total_tokens": 4440,
+    "doc_id": "cff1f162bd",
+    "detail": "extract national_pension_payment_cert"
+  },
+  {
+    "timestamp": "2026-05-20T00:41:40.458222",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:42:09.440160",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 9414,
+    "completion_tokens": 1467,
+    "total_tokens": 10881,
+    "doc_id": "3b675b0433",
+    "detail": "extract employment_insurance_worker_assessment"
+  },
+  {
+    "timestamp": "2026-05-20T00:42:11.287263",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:42:19.892622",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 3586,
+    "completion_tokens": 264,
+    "total_tokens": 3850,
+    "doc_id": "fa282a36f0",
+    "detail": "extract bank_transaction_history"
+  },
+  {
+    "timestamp": "2026-05-20T00:42:24.904618",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:42:37.304861",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4387,
+    "completion_tokens": 661,
+    "total_tokens": 5048,
+    "doc_id": "ef59080b8a",
+    "detail": "extract income_payment_cert"
+  },
+  {
+    "timestamp": "2026-05-20T00:42:40.791733",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:42:50.907310",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 3037,
+    "completion_tokens": 188,
+    "total_tokens": 3225,
+    "doc_id": "ce2a91b338",
+    "detail": "extract salary_history_cert"
+  },
+  {
+    "timestamp": "2026-05-20T00:48:46.178941",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:48:47.351467",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:49:00.394010",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8796,
+    "completion_tokens": 452,
+    "total_tokens": 9248,
+    "doc_id": "56ebc41347",
+    "detail": "extract comprehensive_income_tax_return"
+  },
+  {
+    "timestamp": "2026-05-20T00:49:05.311563",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8860,
+    "completion_tokens": 469,
+    "total_tokens": 9329,
+    "doc_id": "0cb8b65b27",
+    "detail": "extract comprehensive_income_tax_return"
+  },
+  {
+    "timestamp": "2026-05-20T00:54:45.452330",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:54:48.060658",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:54:59.182587",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8798,
+    "completion_tokens": 478,
+    "total_tokens": 9276,
+    "doc_id": "9dadb116f6",
+    "detail": "extract comprehensive_income_tax_return"
+  },
+  {
+    "timestamp": "2026-05-20T00:55:01.851393",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8798,
+    "completion_tokens": 454,
+    "total_tokens": 9252,
+    "doc_id": "9dadb116f6",
+    "detail": "extract comprehensive_income_tax_return"
+  },
+  {
+    "timestamp": "2026-05-20T00:55:03.497083",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 8796,
+    "completion_tokens": 452,
+    "total_tokens": 9248,
+    "doc_id": "75bbd30f59",
+    "detail": "extract comprehensive_income_tax_return"
+  },
+  {
+    "timestamp": "2026-05-20T00:56:05.000040",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:56:11.239969",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:56:23.036091",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 5559,
+    "completion_tokens": 310,
+    "total_tokens": 5869,
+    "doc_id": "ce50ee619b",
+    "detail": "extract pay_slip"
+  },
+  {
+    "timestamp": "2026-05-20T00:56:32.082128",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4371,
+    "completion_tokens": 253,
+    "total_tokens": 4624,
+    "doc_id": "6c953b6331",
+    "detail": "extract pay_slip"
+  },
+  {
+    "timestamp": "2026-05-20T00:57:07.189645",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:57:24.298020",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 3914,
+    "completion_tokens": 526,
+    "total_tokens": 4440,
+    "doc_id": "6cd0a712d5",
+    "detail": "extract national_pension_payment_cert"
+  },
+  {
+    "timestamp": "2026-05-20T00:58:47.334175",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T00:59:09.738915",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 9414,
+    "completion_tokens": 1480,
+    "total_tokens": 10894,
+    "doc_id": "cd9ee34211",
+    "detail": "extract employment_insurance_worker_assessment"
+  },
+  {
+    "timestamp": "2026-05-20T00:59:16.369640",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 9414,
+    "completion_tokens": 1467,
+    "total_tokens": 10881,
+    "doc_id": "cd9ee34211",
+    "detail": "extract employment_insurance_worker_assessment"
+  },
+  {
+    "timestamp": "2026-05-20T01:01:29.956981",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T01:01:40.455691",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 3586,
+    "completion_tokens": 263,
+    "total_tokens": 3849,
+    "doc_id": "fd1d8802e7",
+    "detail": "extract bank_transaction_history"
+  },
+  {
+    "timestamp": "2026-05-20T01:02:58.505140",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T01:03:10.772541",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4387,
+    "completion_tokens": 660,
+    "total_tokens": 5047,
+    "doc_id": "f413e58e1a",
+    "detail": "extract income_payment_cert"
+  },
+  {
+    "timestamp": "2026-05-20T01:03:12.754181",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 4387,
+    "completion_tokens": 667,
+    "total_tokens": 5054,
+    "doc_id": "f413e58e1a",
+    "detail": "extract income_payment_cert"
+  },
+  {
+    "timestamp": "2026-05-20T01:04:04.610481",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 1,
+    "doc_id": "",
+    "detail": "1 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-20T01:04:14.979851",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 3037,
+    "completion_tokens": 188,
+    "total_tokens": 3225,
+    "doc_id": "20faf2ef42",
+    "detail": "extract salary_history_cert"
   }
 ]
