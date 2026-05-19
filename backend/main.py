@@ -39,29 +39,41 @@ from approval_crop import (
 def _resolve_doc_file(doc: dict) -> str | None:
     """Resolve a document's on-disk path across all the places it might live.
 
-    Tries in order:
-      1. The stored file_path as-is (handles absolute paths from new uploads
-         where UPLOAD_DIR is /data/uploads on Render).
-      2. file_path joined with backend/ dir (legacy relative './uploads/...').
-      3. UPLOAD_DIR + same basename (handles seeded data where file_path
-         was './uploads/...' locally but actual files now live at /data/uploads/).
-      4. UPLOAD_DIR + '{doc_type}__{filename}' (the canonical safe_name pattern).
+    Tries multiple combinations of:
+      • file_path as-is (absolute paths from new uploads).
+      • file_path joined with backend/ dir (legacy relative './uploads/...').
+      • UPLOAD_DIR + basename (handles UPLOAD_DIR env-var differences).
+      • UPLOAD_DIR + '{doc_type}__{filename}' (canonical safe_name pattern).
+
+    Each candidate is also tried with NFC/NFD Unicode normalization to handle
+    the macOS→Linux filename encoding mismatch in the seed bundle (macOS git
+    NFC-normalizes filenames on commit, but JSON content stays NFD).
+
     Returns the first path that exists, or None.
     """
+    import unicodedata
+
     fp = doc.get("file_path") or ""
-    candidates = []
-    if fp:
-        candidates.append(fp)
-        if not os.path.isabs(fp):
-            candidates.append(os.path.join(os.path.dirname(__file__), fp))
-        candidates.append(os.path.join(UPLOAD_DIR, os.path.basename(fp)))
     fname = doc.get("filename", "")
     dt = doc.get("doc_type", "")
+
+    raw_candidates = []
+    if fp:
+        raw_candidates.append(fp)
+        if not os.path.isabs(fp):
+            raw_candidates.append(os.path.join(os.path.dirname(__file__), fp))
+        raw_candidates.append(os.path.join(UPLOAD_DIR, os.path.basename(fp)))
     if fname and dt:
-        candidates.append(os.path.join(UPLOAD_DIR, f"{dt}__{fname}"))
-    for c in candidates:
-        if c and os.path.exists(c):
-            return c
+        raw_candidates.append(os.path.join(UPLOAD_DIR, f"{dt}__{fname}"))
+
+    # Try each candidate with NFC, NFD, and as-is
+    for raw in raw_candidates:
+        if not raw:
+            continue
+        for form in ("NFC", "NFD", None):
+            cand = unicodedata.normalize(form, raw) if form else raw
+            if os.path.exists(cand):
+                return cand
     return None
 
 
