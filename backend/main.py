@@ -36,6 +36,35 @@ from approval_crop import (
 )
 
 
+def _resolve_doc_file(doc: dict) -> str | None:
+    """Resolve a document's on-disk path across all the places it might live.
+
+    Tries in order:
+      1. The stored file_path as-is (handles absolute paths from new uploads
+         where UPLOAD_DIR is /data/uploads on Render).
+      2. file_path joined with backend/ dir (legacy relative './uploads/...').
+      3. UPLOAD_DIR + same basename (handles seeded data where file_path
+         was './uploads/...' locally but actual files now live at /data/uploads/).
+      4. UPLOAD_DIR + '{doc_type}__{filename}' (the canonical safe_name pattern).
+    Returns the first path that exists, or None.
+    """
+    fp = doc.get("file_path") or ""
+    candidates = []
+    if fp:
+        candidates.append(fp)
+        if not os.path.isabs(fp):
+            candidates.append(os.path.join(os.path.dirname(__file__), fp))
+        candidates.append(os.path.join(UPLOAD_DIR, os.path.basename(fp)))
+    fname = doc.get("filename", "")
+    dt = doc.get("doc_type", "")
+    if fname and dt:
+        candidates.append(os.path.join(UPLOAD_DIR, f"{dt}__{fname}"))
+    for c in candidates:
+        if c and os.path.exists(c):
+            return c
+    return None
+
+
 def _render_pdf_pages_to_base64(file_path: str, zoom: float = 2.0) -> dict[str, str]:
     """Render pages of a PDF or multi-page TIF to PNG base64 so the browser
     (which cannot display PDF/TIF in <img>) has something to show.
@@ -234,15 +263,8 @@ async def extract_document(doc_id: str):
     if not schema:
         raise HTTPException(400, f"No schema for doc_type: {doc['doc_type']}")
 
-    file_path = doc["file_path"]
-    if not os.path.isabs(file_path):
-        file_path = os.path.join(os.path.dirname(__file__), file_path)
-    if not os.path.exists(file_path):
-        filename = doc.get("filename", "")
-        fallback = os.path.join(UPLOAD_DIR, f"{doc['doc_type']}__{filename}")
-        if os.path.exists(fallback):
-            file_path = fallback
-    if not os.path.exists(file_path):
+    file_path = _resolve_doc_file(doc)
+    if not file_path:
         raise HTTPException(404, "Source file not found on disk")
 
     try:
@@ -548,9 +570,9 @@ async def render_pdf_pages(doc_id: str):
     doc = store.get_document(doc_id)
     if not doc:
         raise HTTPException(404, "Document not found")
-    fp = doc["file_path"]
-    if not os.path.isabs(fp):
-        fp = os.path.join(os.path.dirname(__file__), fp)
+    fp = _resolve_doc_file(doc)
+    if not fp:
+        raise HTTPException(404, "Source file not found")
     ext = fp.lower().rsplit(".", 1)[-1]
     if ext not in ("pdf", "tif", "tiff"):
         return {"doc_id": doc_id, "skipped": True, "reason": f"ext={ext} not PDF/TIF"}
@@ -571,10 +593,8 @@ async def reparse_document(doc_id: str):
     doc = store.get_document(doc_id)
     if not doc:
         raise HTTPException(404, "Document not found")
-    file_path = doc["file_path"]
-    if not os.path.isabs(file_path):
-        file_path = os.path.join(os.path.dirname(__file__), file_path)
-    if not os.path.exists(file_path):
+    file_path = _resolve_doc_file(doc)
+    if not file_path:
         raise HTTPException(404, "Source file not found")
     try:
         result = await upstage.parse_document(file_path, doc_id=doc_id)
@@ -647,10 +667,8 @@ async def get_document_file(doc_id: str):
     doc = store.get_document(doc_id)
     if not doc:
         raise HTTPException(404, "Document not found")
-    fp = doc["file_path"]
-    if not os.path.isabs(fp):
-        fp = os.path.join(os.path.dirname(__file__), fp)
-    if not os.path.exists(fp):
+    fp = _resolve_doc_file(doc)
+    if not fp:
         raise HTTPException(404, "File missing")
     return FileResponse(fp, filename=doc["filename"])
 
