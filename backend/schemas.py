@@ -1743,6 +1743,112 @@ SCHEMA_SALARY_HISTORY_CERT = _wrap("salary_history_cert", {
 })
 
 
+# 21. 법인세 수동신고서 (법인세 과세표준 및 세액신고서 — 표지 1페이지 기준)
+#     스캔 이미지 + 손글씨/도장 다수, 26~104페이지 신고 패키지의 표지를 추출.
+SCHEMA_CORPORATE_TAX_FILING = _wrap("corporate_tax_filing", {
+    # ── 기본 정보 (익명화 문서는 일부 빈칸일 수 있음) ──
+    "사업자등록번호": {"type": "string", "description": "①사업자등록번호. 마스킹/익명화 시 빈 문자열"},
+    "법인등록번호": {"type": "string", "description": "②법인등록번호"},
+    "법인명": {"type": "string", "description": "③법인명"},
+    "대표자성명": {"type": "string", "description": "④대표자 성명"},
+    "전화번호": {"type": "string", "description": "전화번호"},
+    "소재지": {"type": "string", "description": "⑤소재지 (본점 주소)"},
+    "전자우편주소": {"type": "string", "description": "전자우편주소"},
+
+    # ── 업종 / 사업연도 ──
+    "업태": {"type": "string", "description": "⑥업태. 예: '서비스', '금융업', '농업,축산,어업,임업'"},
+    "종목": {"type": "string", "description": "종목"},
+    "주업종코드": {"type": "string", "description": "주업종코드. 예: '742104', '659902', '512190'"},
+    "사업연도_시작": {"type": "string", "description": "⑦사업연도 시작일. 예: '2025.01.01'"},
+    "사업연도_종료": {"type": "string", "description": "⑦사업연도 종료일. 예: '2025.12.31'"},
+    "수시부과기간": {"type": "string", "description": "⑧수시부과기간 (해당시)"},
+
+    # ── 법인 구분 ──
+    "법인구분_내외국": {"type": "string", "description": "⑨법인구분: 내국법인 / 외국법인 중 표시된 값"},
+    "법인구분_영리여부": {"type": "string", "description": "영리법인 / 비영리법인 중 표시된 값"},
+    "종류별구분": {
+        "type": "string",
+        "description": (
+            "⑩종류별 구분 — 표에서 동그라미·체크·음영으로 '표시된 항목 하나만' 추출. "
+            "후보: 중소기업 / 중견기업 / 일반(상호출자제한기업) / 그 외 일반기업. "
+            "여러 개를 나열하지 말 것."
+        ),
+    },
+    "상장구분": {"type": "string", "description": "상장법인 / 코스닥상장법인 / 기타법인 중 '표시된 하나만'"},
+
+    # ── 외부감사 / 신고구분 ──
+    "외부감사_대상여부": {"type": "string", "description": "⑯외부감사 대상: 해당 / 미해당 중 표시된 하나"},
+    "신고구분": {
+        "type": "string",
+        "description": (
+            "⑰신고구분 — 동그라미·체크된 '하나만' 추출. "
+            "후보: 정기신고 / 수정신고 / 기한후신고 / 중도폐업신고 / 경정청구. "
+            "후보를 모두 나열하지 말 것. 통상 '정기신고'."
+        ),
+    },
+    "법인유형별구분_코드": {"type": "string", "description": "⑱법인유형별 구분 코드. 예: '100'"},
+
+    # ── 일자 ──
+    "결산확정일": {"type": "string", "description": "⑲결산확정일. 예: '2026.03.31'"},
+    "신고일": {"type": "string", "description": "⑳신고일. 예: '2026.03.31'"},
+    "납부일": {"type": "string", "description": "㉑납부일"},
+    "신고기한_연장승인_신청일": {"type": "string", "description": "㉒신고기한 연장승인 신청일 (해당시)"},
+
+    # ── 세액 명세 (표지 하단) ──
+    # 주의: 이 표는 좌측 '법인세' 컬럼과 우측 '토지등 양도소득에 대한 법인세' 컬럼이
+    #       나란히 있음. 각 항목은 반드시 '법인세 본세' 컬럼(첫 번째 금액 컬럼) 값 1개만.
+    "수입금액": {"type": "string", "description": "(37)수입금액 — 법인세 컬럼 값 1개만"},
+    "과세표준": {"type": "string", "description": "(38)과세표준 — 법인세 컬럼 값 1개만. 예: '73,646,307'"},
+    "산출세액": {"type": "string", "description": "(39)산출세액 — 법인세 컬럼 값 1개만. 예: '6,628,167'. 같은 숫자를 두 번 쓰지 말 것"},
+    "총부담세액": {"type": "string", "description": "(40)총부담세액 — 법인세 컬럼 값 1개만"},
+    "기납부세액": {"type": "string", "description": "(41)기납부세액 — 법인세 컬럼 값 1개만. 예: '1,303,030'"},
+    "차감납부할세액계": {"type": "string", "description": "(42)차감납부할 세액 계 — 법인세 컬럼 값 1개만. 예: '5,325,137'"},
+    "분납할세액": {"type": "string", "description": "(43)분납할 세액 — 법인세 컬럼 값 1개만"},
+    "차감납부세액": {"type": "string", "description": "(44)차감납부세액 (실제 납부액) — 법인세 컬럼 값 1개만"},
+
+    # ── 조정 정보 ──
+    "조정반번호": {"type": "string", "description": "(45)조정반번호"},
+    "조정자_관리번호": {"type": "string", "description": "(46)조정자 관리번호"},
+    "조정자성명": {"type": "string", "description": "(47)조정자 성명"},
+    "조정자_사업자등록번호": {"type": "string", "description": "조정자 사업자등록번호"},
+    "조정자_전화번호": {"type": "string", "description": "조정자 전화번호"},
+
+    # ── 국세환급금 계좌신고 ──
+    "환급금_예입처": {"type": "string", "description": "(48)국세환급금 예입처 (은행명)"},
+    "환급금_예금종류": {"type": "string", "description": "(49)예금 종류"},
+    "환급금_계좌번호": {"type": "string", "description": "환급금 입금 계좌번호"},
+
+    # ── 세무대리인 ──
+    "세무대리인_성명": {"type": "string", "description": "세무대리인(세무사) 성명"},
+    "세무대리인_사업자등록번호": {"type": "string", "description": "세무대리인 사업자등록번호"},
+    "관할세무서": {"type": "string", "description": "신고서를 제출하는 관할 세무서명. 예: '순천세무서'"},
+
+    # ── 신고서 작성 항목 체크 (해당 여부) ──
+    "주식변동_여부": {"type": "boolean", "description": "(23)주식변동 '해당' 표시 여부"},
+    "장부전산화_여부": {"type": "boolean", "description": "(24)장부전산화 '해당' 표시 여부"},
+    "감가상각방법신고서_제출여부": {"type": "boolean", "description": "(27)감가상각방법(내용연수)신고서 제출 '해당' 여부"},
+    "기능통화_재무제표_작성여부": {"type": "boolean", "description": "(29)기능통화 채택 재무제표 작성 '해당' 여부"},
+    "한국채택국제회계기준_적용여부": {"type": "boolean", "description": "(33)한국채택국제회계기준(K-IFRS) 적용 '해당' 여부"},
+
+    # ── 서명 / 날인 (픽셀/시각 판독) ──
+    "신고인_법인_날인유무": {
+        "type": "boolean",
+        "description": "신고인(법인) 서명 또는 법인 인감 날인 존재 여부",
+    },
+    "세무대리인_날인유무": {
+        "type": "boolean",
+        "description": "세무대리인 서명 또는 직인 날인 존재 여부",
+    },
+    "민원접수_확인인_유무": {
+        "type": "boolean",
+        "description": "문서 상단/하단의 세무서 접수 확인 도장(예: '미검증', 접수인) 존재 여부",
+    },
+
+    # ── 부가 식별 ──
+    "민원접수번호": {"type": "string", "description": "하단 '민원접수번호' 값. 예: '416-2026-1-101169526716'"},
+})
+
+
 DOC_TYPES = {
     # ─── 신규: 부동산 매매·임대차 계약서 (최상단 노출) ───
     "real_estate_contract": {
@@ -1934,6 +2040,17 @@ DOC_TYPES = {
         "icon": "📜",
         "color": "#A07FB0",
         "schema": SCHEMA_SALARY_HISTORY_CERT,
+    },
+
+    # ─── 신규: 법인세 수동신고서 (LNB 최하단) ───
+    "corporate_tax_filing": {
+        "key": "corporate_tax_filing",
+        "label": "법인세 과세표준 및 세액신고서",
+        "label_short": "법인세 신고서",
+        "category": "기업여신·재무",
+        "icon": "🏛️",
+        "color": "#5B7C99",
+        "schema": SCHEMA_CORPORATE_TAX_FILING,
     },
 }
 

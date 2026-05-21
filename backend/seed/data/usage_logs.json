@@ -12758,5 +12758,185 @@
     "total_tokens": 3225,
     "doc_id": "20faf2ef42",
     "detail": "extract salary_history_cert"
+  },
+  {
+    "timestamp": "2026-05-21T12:08:06.018006",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 26,
+    "doc_id": "",
+    "detail": "26 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:08:23.754487",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 11152,
+    "completion_tokens": 628,
+    "total_tokens": 11780,
+    "doc_id": "6eb6499fef",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:09:43.244490",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 29,
+    "doc_id": "",
+    "detail": "29 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:10:04.190102",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12634,
+    "completion_tokens": 532,
+    "total_tokens": 13166,
+    "doc_id": "3e608bc1dd",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:10:54.435378",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 30,
+    "doc_id": "",
+    "detail": "30 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:11:14.039476",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12616,
+    "completion_tokens": 528,
+    "total_tokens": 13144,
+    "doc_id": "be08ea4383",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:11:34.687151",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 26,
+    "doc_id": "",
+    "detail": "26 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:11:52.964001",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12584,
+    "completion_tokens": 568,
+    "total_tokens": 13152,
+    "doc_id": "cb97979ae1",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:12:06.496170",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 28,
+    "doc_id": "",
+    "detail": "28 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:12:21.810457",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 10320,
+    "completion_tokens": 466,
+    "total_tokens": 10786,
+    "doc_id": "c39ee828a0",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:12:51.965090",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 45,
+    "doc_id": "",
+    "detail": "45 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:13:10.147801",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12340,
+    "completion_tokens": 532,
+    "total_tokens": 12872,
+    "doc_id": "ed1acc6af8",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:13:39.834080",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 52,
+    "doc_id": "",
+    "detail": "52 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:13:55.747254",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 7380,
+    "completion_tokens": 449,
+    "total_tokens": 7829,
+    "doc_id": "fd734f1f49",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:15:18.933145",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 48,
+    "doc_id": "",
+    "detail": "48 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:15:48.397989",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12532,
+    "completion_tokens": 538,
+    "total_tokens": 13070,
+    "doc_id": "1ec77ff1e5",
+    "detail": "extract corporate_tax_filing"
+  },
+  {
+    "timestamp": "2026-05-21T12:16:29.230752",
+    "api_type": "document-parse",
+    "model": "document-parse",
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 41,
+    "doc_id": "",
+    "detail": "41 page(s), ocr=force"
+  },
+  {
+    "timestamp": "2026-05-21T12:16:55.219108",
+    "api_type": "information-extract",
+    "model": "information-extract",
+    "prompt_tokens": 12628,
+    "completion_tokens": 559,
+    "total_tokens": 13187,
+    "doc_id": "1bc834c6a9",
+    "detail": "extract corporate_tax_filing"
   }
 ]

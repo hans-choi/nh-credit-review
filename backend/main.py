@@ -279,9 +279,22 @@ async def extract_document(doc_id: str):
     if not file_path:
         raise HTTPException(404, "Source file not found on disk")
 
+    # Large multi-page filings (법인세 수동신고서 = 26~104p): the headline
+    # fields all sit on the page-1 cover form. Slice page 1 to a PNG so the
+    # IE payload stays small and focused.
+    ie_input_path = file_path
+    _tmp_slice = None
+    if doc["doc_type"] == "corporate_tax_filing":
+        try:
+            _tmp_slice = _slice_first_page_png(file_path, doc_id)
+            if _tmp_slice:
+                ie_input_path = _tmp_slice
+        except Exception as e:
+            print(f"[CorpTax slice] page-1 slice failed, using full file: {e}")
+
     try:
         result = await upstage.extract_information(
-            file_path, schema,
+            ie_input_path, schema,
             doc_id=doc_id,
             detail=f"extract {doc['doc_type']}",
         )
@@ -391,6 +404,32 @@ async def extract_document(doc_id: str):
         }
     except Exception as e:
         raise HTTPException(500, f"Extract failed: {e}\n{traceback.format_exc()}")
+    finally:
+        if _tmp_slice and os.path.exists(_tmp_slice):
+            try:
+                os.remove(_tmp_slice)
+            except Exception:
+                pass
+
+
+def _slice_first_page_png(pdf_path: str, doc_id: str) -> str | None:
+    """Render page 1 of a PDF to a standalone PNG (for IE on huge multi-page
+    filings). Returns the temp PNG path, or None if the source isn't a PDF."""
+    ext = pdf_path.lower().rsplit(".", 1)[-1]
+    if ext != "pdf":
+        return None
+    import fitz  # PyMuPDF
+    crop_dir = os.path.join(UPLOAD_DIR, "_crops")
+    os.makedirs(crop_dir, exist_ok=True)
+    out_path = os.path.join(crop_dir, f"_p1_{doc_id}.png")
+    with fitz.open(pdf_path) as pdf:
+        if pdf.page_count == 0:
+            return None
+        # 3x zoom — enough resolution for the dense cover form
+        pix = pdf[0].get_pixmap(matrix=fitz.Matrix(3.0, 3.0), alpha=False)
+        pix.save(out_path)
+    print(f"[CorpTax slice] page-1 PNG → {out_path}")
+    return out_path
 
 
 def _detect_borrower_signature(doc: dict, file_path: str) -> dict | None:

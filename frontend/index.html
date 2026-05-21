@@ -1251,7 +1251,7 @@ mark { background: #fff4bf; color: var(--g900); padding: 0 2px; border-radius: 2
       <div class="nav-item" data-view="internal"><span class="nav-ic"><svg><use href="#i-external"/></svg></span><span class="nav-label">내부 시스템 연동</span></div>
       <div class="nav-item" data-view="usage"><span class="nav-ic"><svg><use href="#i-chart"/></svg></span><span class="nav-label">API 사용량</span></div>
 
-      <div class="nav-section">판독 문서 (20종)</div>
+      <div class="nav-section">판독 문서 (21종)</div>
       <div id="sidebar-doctypes"></div>
     </nav>
 
@@ -1564,6 +1564,8 @@ const DOC_ICON_MAP = {
   bank_transaction_history: 'i-list',
   income_payment_cert: 'i-receipt',
   salary_history_cert: 'i-doc',
+  // 신규: 법인세 수동신고서
+  corporate_tax_filing: 'i-building',
 };
 
 // ────────────────────────────────────────────
@@ -3256,7 +3258,7 @@ function _renderDocumentsList() {
       <span style="color:var(--g300);">|</span>
       <span>추출완료 <b style="color:var(--color-success);">${totalExtracted}</b></span>
       <span style="color:var(--g300);">|</span>
-      <span>활성 유형 <b>${typesWithDocs}</b> / 20</span>
+      <span>활성 유형 <b>${typesWithDocs}</b> / 21</span>
       ${qn || f.status !== 'all' ? `<span style="color:var(--g300);">|</span><span style="color:var(--brand-dark);">검색 결과 <b>${filtered.length}</b>건</span>` : ''}
     </div>
     <div class="docs-filter-controls">
