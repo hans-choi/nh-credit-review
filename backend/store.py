@@ -23,10 +23,13 @@ class DocumentStore:
     def _load(self):
         for name in ("documents", "extractions", "usage_logs", "review_cases"):
             p = self._path(name)
-            if not os.path.exists(p):
-                continue
             if name == "documents":
+                # 디스크 파일 존재 여부와 무관하게 슬림 시드를 권위 소스로 로드한다.
+                # (entrypoint는 documents.json을 건드리지 않는다 — 비대 파일 머지로 인한
+                #  기동 전 OOM을 피하기 위해.)
                 self.documents = self._load_documents_safe(p)
+                continue
+            if not os.path.exists(p):
                 continue
             try:
                 with open(p, "r", encoding="utf-8") as f:

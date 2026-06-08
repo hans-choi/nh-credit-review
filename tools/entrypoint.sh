@@ -33,6 +33,13 @@ if [ -d "$SEED_DIR/data" ]; then
     [ -e "$src" ] || continue
     name=$(basename "$src")
     dst="$DATA_TARGET/$name"
+    # documents.json은 page_images 누적으로 디스크에서 수백 MB까지 부풀 수 있다.
+    # 여기서 dst를 json.load로 머지하면 앱 기동 전에 512MB OOM이 난다.
+    # 앱(store)이 슬림 시드를 권위 소스로 직접 로드·정규화하므로 여기서는 건드리지 않는다.
+    if [ "$name" = "documents.json" ]; then
+      echo "[seed]   = documents.json (skip merge — 앱이 슬림 시드로 로드)"
+      continue
+    fi
     if [ ! -e "$dst" ]; then
       cp "$src" "$dst"
       echo "[seed]   + $name (new file)"
