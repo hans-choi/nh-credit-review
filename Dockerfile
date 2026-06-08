@@ -26,6 +26,7 @@ RUN mkdir -p /app/uploads /app/data /data/uploads /data/store
 ENV UPLOAD_DIR=/data/uploads \
     DATA_DIR=/data/store \
     PYTHONUNBUFFERED=1 \
+    MALLOC_ARENA_MAX=2 \
     PORT=8000
 
 # Entrypoint seeds the persistent disk on first boot (no-op if already populated)

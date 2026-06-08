@@ -77,12 +77,18 @@ def _resolve_doc_file(doc: dict) -> str | None:
     return None
 
 
-def _render_pdf_pages_to_base64(file_path: str, zoom: float = 2.0) -> dict[str, str]:
+def _render_pdf_pages_to_base64(file_path: str, zoom: float = 1.5) -> dict[str, str]:
     """Render pages of a PDF or multi-page TIF to PNG base64 so the browser
     (which cannot display PDF/TIF in <img>) has something to show.
-    Returns { "1": "...base64...", "2": "..." }. Unsupported input returns {}."""
+    Returns { "1": "...base64...", "2": "..." }. Unsupported input returns {}.
+
+    page_images는 영구 저장하지 않고 요청 시 이 함수로 재생성한다. Starter(512MB)에서
+    대형(수십 페이지) PDF가 메모리를 넘기지 않도록 배율을 낮추고(zoom 1.5),
+    페이지 수가 많을수록 추가로 낮춰 픽스맵을 즉시 회수한다.
+    """
     import base64
     import io
+    import gc
     ext = file_path.lower().rsplit(".", 1)[-1]
     out: dict[str, str] = {}
 
@@ -90,12 +96,18 @@ def _render_pdf_pages_to_base64(file_path: str, zoom: float = 2.0) -> dict[str, 
         try:
             import fitz  # PyMuPDF
             with fitz.open(file_path) as pdf:
-                mat = fitz.Matrix(zoom, zoom)
+                # 페이지가 많을수록 배율을 더 낮춰 메모리 스파이크를 억제한다.
+                n = pdf.page_count
+                z = zoom if n <= 10 else (1.2 if n <= 25 else 1.0)
+                mat = fitz.Matrix(z, z)
                 for i, page in enumerate(pdf, start=1):
                     pix = page.get_pixmap(matrix=mat, alpha=False)
                     out[str(i)] = base64.b64encode(pix.tobytes("png")).decode("ascii")
+                    pix = None  # 픽스맵 즉시 해제
         except Exception as e:
             print(f"[PDF render] failed for {file_path}: {e}")
+        finally:
+            gc.collect()
         return out
 
     if ext in ("tif", "tiff"):
@@ -119,13 +131,62 @@ def _render_pdf_pages_to_base64(file_path: str, zoom: float = 2.0) -> dict[str, 
             print(f"[TIF render] failed for {file_path}: {e}")
         return out
 
+    if ext in ("png", "jpg", "jpeg", "webp", "bmp", "gif"):
+        # 단일 이미지 문서: PNG base64 1장으로 정규화해 브라우저가 표시하게 한다.
+        try:
+            from PIL import Image
+            with Image.open(file_path) as im:
+                frame = im.convert("RGB")
+                w, h = frame.size
+                if max(w, h) < 1600:
+                    scale = 1600 / max(w, h)
+                    frame = frame.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
+                buf = io.BytesIO()
+                frame.save(buf, format="PNG")
+                out["1"] = base64.b64encode(buf.getvalue()).decode("ascii")
+        except Exception as e:
+            print(f"[IMG render] failed for {file_path}: {e}")
+        return out
+
     return out
+
+
+# 대형 PDF 렌더 등으로 크게 늘어난 힙을 OS에 반환한다(glibc는 free해도 RSS를 안 줄임).
+# Linux(Render)에서만 효과가 있고 그 외 플랫폼에서는 무해한 no-op이다.
+_libc = None
+try:  # pragma: no cover - 플랫폼 의존
+    import ctypes
+    _libc = ctypes.CDLL("libc.so.6")
+except Exception:
+    _libc = None
+
+
+def _release_memory():
+    import gc
+    gc.collect()
+    if _libc is not None:
+        try:
+            _libc.malloc_trim(0)
+        except Exception:
+            pass
+
 
 app = FastAPI(
     title="여신심사 AI 판독 POC",
     description="여신 심사 서류 자동 판독 (Document Parse Enhanced + Information Extract)",
     version="0.1.0",
 )
+
+
+@app.middleware("http")
+async def _reclaim_after_heavy(request, call_next):
+    response = await call_next(request)
+    # 페이지 이미지를 재생성하는 무거운 조회 직후 메모리를 회수한다.
+    p = request.url.path
+    if "/api/documents/" in p or p.endswith("/render-pages") or p.endswith("/reparse"):
+        _release_memory()
+    return response
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -603,13 +664,26 @@ async def get_document(doc_id: str):
     if not doc:
         raise HTTPException(404, "Document not found")
     extraction = store.get_extraction(doc_id)
+    # page_images는 영구 저장하지 않으므로(메모리/디스크 부풀림 방지) 요청 시 재생성한다.
+    # 응답 전용 복사본에만 채우고 저장소/디스크는 건드리지 않는다.
+    meta = dict(doc.get("metadata") or {})
+    if not meta.get("page_images"):
+        fp = _resolve_doc_file(doc)
+        if fp:
+            try:
+                rendered = _render_pdf_pages_to_base64(fp)
+                if rendered:
+                    meta["page_images"] = rendered
+                    meta["pages"] = len(rendered)
+            except Exception:
+                pass
     return {
         "id": doc["id"],
         "filename": doc["filename"],
         "doc_type": doc["doc_type"],
         "parsed_text": doc["parsed_text"],
         "parsed_html": doc["parsed_html"],
-        "metadata": doc["metadata"],
+        "metadata": meta,
         "uploaded_at": doc["uploaded_at"],
         "extraction": extraction,
     }
@@ -624,17 +698,9 @@ async def render_pdf_pages(doc_id: str):
     fp = _resolve_doc_file(doc)
     if not fp:
         raise HTTPException(404, "Source file not found")
-    ext = fp.lower().rsplit(".", 1)[-1]
-    if ext not in ("pdf", "tif", "tiff"):
-        return {"doc_id": doc_id, "skipped": True, "reason": f"ext={ext} not PDF/TIF"}
     rendered = _render_pdf_pages_to_base64(fp)
-    if not rendered:
-        return {"doc_id": doc_id, "rendered_pages": 0}
-    meta = doc.get("metadata", {}) or {}
-    meta["page_images"] = rendered
-    meta["pages"] = len(rendered)
-    doc["metadata"] = meta
-    store._save("documents")
+    # page_images는 영구 저장하지 않는다(메모리·디스크 부풀림 → OOM 방지).
+    # 실제 이미지는 GET /api/documents/{doc_id} 가 요청 시 재생성해 응답에 담는다.
     return {"doc_id": doc_id, "rendered_pages": len(rendered)}
 
 

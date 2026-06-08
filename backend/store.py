@@ -23,16 +23,79 @@ class DocumentStore:
     def _load(self):
         for name in ("documents", "extractions", "usage_logs", "review_cases"):
             p = self._path(name)
-            if os.path.exists(p):
+            if not os.path.exists(p):
+                continue
+            if name == "documents":
+                self.documents = self._load_documents_safe(p)
+                continue
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    setattr(self, name, json.load(f))
+            except Exception:
+                pass
+
+    # ── page_images(페이지 렌더 base64)는 영구 저장하지 않는다 ──────────────
+    # 과거 동작은 render-pages가 재생성한 page_images를 documents.json에 되저장해,
+    # 파일과 인스턴스 메모리가 계속 커지다 Starter(512MB)에서 OOM을 냈다.
+    # 이제 page_images는 요청 시 재생성하고 디스크/메모리에는 두지 않는다.
+    _DOC_RESET_BYTES = 35 * 1024 * 1024  # 슬림 시드(~23MB)보다 크게 부풀면 누적으로 간주
+
+    def _seed_documents_path(self) -> Optional[str]:
+        for cand in (
+            "/app/seed/data/documents.json",
+            os.path.join(os.path.dirname(__file__), "seed", "data", "documents.json"),
+        ):
+            if os.path.exists(cand):
+                return cand
+        return None
+
+    def _strip_page_images(self, docs) -> bool:
+        changed = False
+        if isinstance(docs, dict):
+            for d in docs.values():
+                md = d.get("metadata") if isinstance(d, dict) else None
+                if isinstance(md, dict) and md.get("page_images"):
+                    md["page_images"] = {}
+                    changed = True
+        return changed
+
+    def _load_documents_safe(self, p: str) -> dict:
+        # 디스크 파일이 슬림 시드보다 크게 부풀었으면(page_images 누적) 512MB에서
+        # json.load 자체가 OOM날 수 있다 → 베이크된 슬림 시드로 베이스라인을 복원한다.
+        try:
+            size = os.path.getsize(p)
+        except OSError:
+            size = 0
+        if size > self._DOC_RESET_BYTES:
+            seed = self._seed_documents_path()
+            if seed and os.path.abspath(seed) != os.path.abspath(p):
                 try:
-                    with open(p, "r", encoding="utf-8") as f:
-                        setattr(self, name, json.load(f))
+                    import shutil
+                    shutil.copyfile(seed, p)
                 except Exception:
                     pass
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                docs = json.load(f)
+        except Exception:
+            return {}
+        if not isinstance(docs, dict):
+            return {}
+        if self._strip_page_images(docs):
+            try:
+                with open(p, "w", encoding="utf-8") as f:
+                    json.dump(docs, f, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
+        return docs
 
     def _save(self, name: str):
+        data = getattr(self, name)
+        if name == "documents":
+            # page_images는 디스크/메모리에 남기지 않는다(부풀림·OOM 방지)
+            self._strip_page_images(data)
         with open(self._path(name), "w", encoding="utf-8") as f:
-            json.dump(getattr(self, name), f, ensure_ascii=False, indent=2)
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
     def add_document(
         self,
