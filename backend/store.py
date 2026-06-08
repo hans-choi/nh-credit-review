@@ -60,33 +60,35 @@ class DocumentStore:
         return changed
 
     def _load_documents_safe(self, p: str) -> dict:
-        # 디스크 파일이 슬림 시드보다 크게 부풀었으면(page_images 누적) 512MB에서
-        # json.load 자체가 OOM날 수 있다 → 베이크된 슬림 시드로 베이스라인을 복원한다.
+        # 디스크의 documents.json은 과거 render-pages 되저장으로 비대해질 수 있어,
+        # 그대로 json.load하면 Starter(512MB)에서 OOM이 난다. 디스크 상태에 의존하지
+        # 않도록, 베이크된 슬림 시드(~23MB, 240MB 수준)를 권위 소스로 로드한다.
+        # 그 뒤 디스크를 슬림본으로 덮어써 비대화 누적을 끊는다.
+        # (세션 중 추가 업로드분은 재배포 시 시드 베이스라인으로 초기화된다 — 데모 허용.)
+        seed = self._seed_documents_path()
+        source = seed if (seed and os.path.exists(seed)) else p
         try:
-            size = os.path.getsize(p)
-        except OSError:
-            size = 0
-        if size > self._DOC_RESET_BYTES:
-            seed = self._seed_documents_path()
-            if seed and os.path.abspath(seed) != os.path.abspath(p):
-                try:
-                    import shutil
-                    shutil.copyfile(seed, p)
-                except Exception:
-                    pass
-        try:
-            with open(p, "r", encoding="utf-8") as f:
+            with open(source, "r", encoding="utf-8") as f:
                 docs = json.load(f)
         except Exception:
-            return {}
+            # 시드 로드 실패 시에만 디스크로 폴백
+            if source != p:
+                try:
+                    with open(p, "r", encoding="utf-8") as f:
+                        docs = json.load(f)
+                except Exception:
+                    return {}
+            else:
+                return {}
         if not isinstance(docs, dict):
             return {}
-        if self._strip_page_images(docs):
-            try:
-                with open(p, "w", encoding="utf-8") as f:
-                    json.dump(docs, f, ensure_ascii=False, indent=2)
-            except Exception:
-                pass
+        self._strip_page_images(docs)
+        # 디스크를 항상 슬림 상태로 정규화(비대화 누적 차단, 디스크 공간 회수)
+        try:
+            with open(p, "w", encoding="utf-8") as f:
+                json.dump(docs, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
         return docs
 
     def _save(self, name: str):
